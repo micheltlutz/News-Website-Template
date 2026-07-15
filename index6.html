@@ -1,12 +1,34 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt-BR">
 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>NewsEdge | Home 6</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Notícias Mobile | Home 6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Notícias Mobile SEO Start -->
+        <meta name="description" content="Home 6 Notícias Mobile: featured section, reviews e últimos artigos.">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://www.noticiasmobile.com.br/index6.html">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Notícias Mobile">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:title" content="Notícias Mobile | Home 6">
+        <meta property="og:description" content="Home 6 Notícias Mobile: featured section, reviews e últimos artigos.">
+        <meta property="og:url" content="https://www.noticiasmobile.com.br/index6.html">
+        <meta property="og:image" content="https://www.noticiasmobile.com.br/img/logo.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Notícias Mobile | Home 6">
+        <meta name="twitter:description" content="Home 6 Notícias Mobile: featured section, reviews e últimos artigos.">
+        <meta name="twitter:image" content="https://www.noticiasmobile.com.br/img/logo.png">
+        <link rel="apple-touch-icon" href="img/favicon.png">
+        <meta name="theme-color" content="#99cc00">
+        <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Notícias Mobile", "url": "https://www.noticiasmobile.com.br", "inLanguage": "pt-BR", "potentialAction": {"@type": "SearchAction", "target": "https://www.noticiasmobile.com.br/?s={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "NewsMediaOrganization", "name": "Notícias Mobile", "url": "https://www.noticiasmobile.com.br", "logo": "https://www.noticiasmobile.com.br/img/logo.png"}]}</script>
+        <!-- Notícias Mobile SEO End -->
+
+
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
         <!-- Normalize CSS -->
@@ -29,14 +51,46 @@
         <!-- Switch Style CSS -->
         <link rel="stylesheet" href="css/hover-min.css">
         <!-- Custom CSS -->
+        <script>
+        (function () {
+          var KEY = 'noticiasmobile-theme';
+          var saved = null;
+          try { saved = localStorage.getItem(KEY); } catch (e) {}
+          var theme = saved === 'light' || saved === 'dark'
+            ? saved
+            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        })();
+        </script>
+
+        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="style.css">
-        <!-- For IE -->
+        <link rel="stylesheet" href="css/consent.css">
+<!-- For IE -->
         <link rel="stylesheet" type="text/css" href="css/ie-only.css" />
         <!-- Modernizr Js -->
+
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: 'denied',
+          functionality_storage: 'granted',
+          personalization_storage: 'denied',
+          security_storage: 'granted',
+          wait_for_update: 500
+        });
+        window.NoticiasMobileAnalyticsConfig = window.NoticiasMobileAnalyticsConfig || { measurementId: 'G-XXXXXXXXXX' };
+        </script>
+
         <script src="js/modernizr-2.8.3.min.js"></script>
     </head>
 
     <body>
+        <a class="skip-link visuallyhidden focusable" href="#conteudo">Ir para o conteúdo</a>
         <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an 
         <strong>outdated</strong> browser. Please 
@@ -49,7 +103,7 @@
         <!-- Preloader End Here -->
         <div id="wrapper">
             <!-- Header Area Start Here -->
-            <header>
+            <header id="home-6__header" data-widget-id="home-6.header" data-widget-type="site-header">
                 <div id="header-layout2" class="header-style6">
                     <div class="header-top-bar">
                         <div class="top-bar-top bg-accent border-bottom">
@@ -70,37 +124,37 @@
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <ul class="header-social">
                                             <li>
-                                                <a href="#" title="facebook">
+                                                <a href="#" aria-label="Facebook" title="facebook">
                                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="twitter">
+                                                <a href="#" aria-label="Twitter" title="twitter">
                                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="google-plus">
+                                                <a href="#" aria-label="Google Plus" title="google-plus">
                                                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="linkedin">
+                                                <a href="#" aria-label="LinkedIn" title="linkedin">
                                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="pinterest">
+                                                <a href="#" aria-label="Pinterest" title="pinterest">
                                                     <i class="fa fa-pinterest" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="rss">
+                                                <a href="#" aria-label="RSS" title="rss">
                                                     <i class="fa fa-rss" aria-hidden="true"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="vimeo">
+                                                <a href="#" aria-label="Vimeo" title="vimeo">
                                                     <i class="fa fa-vimeo" aria-hidden="true"></i>
                                                 </a>
                                             </li>
@@ -116,13 +170,13 @@
                                 <div class="col-lg-2 d-none d-lg-block">
                                     <div class="logo-area">
                                         <a href="index-2.html" class="img-fluid">
-                                            <img src="img/logo-dark.png" alt="logo" class="img-fluid">
+                                            <img src="img/logo-dark.png" alt="Notícias Mobile" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-lg-8 d-none d-lg-block position-static min-height-none">
+                                <div class="col-lg-7 d-none d-lg-block position-static min-height-none">
                                     <div class="ne-main-menu">
-                                        <nav id="dropdown">
+                                        <nav id="dropdown" aria-label="Menu principal">
                                             <ul>
                                                 <li class="active">
                                                     <a href="#">Home</a>
@@ -197,6 +251,9 @@
                                                         <li>
                                                             <a href="contact.html">Contact Page</a>
                                                         </li>
+                                                        <li>
+                                                            <a href="acessibilidade.html">Acessibilidade</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -215,16 +272,23 @@
                                         </nav>
                                     </div>
                                 </div>
-                                <div class="col-lg-2 col-md-12 text-right position-static">
+                                <div class="col-lg-3 col-md-12 text-right position-static">
                                     <div class="header-action-item on-mobile-fixed">
                                         <ul>
                                             <li>
-                                                <form id="top-search-form" class="header-search-light">
-                                                    <input type="text" class="search-input" placeholder="Search...." required="" style="display: none;">
-                                                    <button class="search-button">
+                                                <form id="top-search-form" class="header-search-light" role="search">
+                                                    <label class="visuallyhidden" for="top-search-input">Buscar no site</label>
+                                                    <input type="search" id="top-search-input" class="search-input" name="s" placeholder="Buscar...." required="" style="display: none;" aria-label="Buscar no site">
+                                                    <button type="button" class="search-button" aria-label="Abrir busca" aria-expanded="false" aria-controls="top-search-input">
                                                         <i class="fa fa-search" aria-hidden="true"></i>
                                                     </button>
                                                 </form>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Tema" aria-pressed="false">
+                                                    <i class="fa fa-moon-o theme-icon-dark" aria-hidden="true"></i>
+                                                    <i class="fa fa-sun-o theme-icon-light" aria-hidden="true"></i>
+                                                </button>
                                             </li>
                                             <li class="d-none d-sm-block d-md-block d-lg-none">
                                                 <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal">
@@ -233,15 +297,15 @@
                                             </li>
                                             <li>
                                                 <div id="side-menu-trigger" class="offcanvas-menu-btn offcanvas-btn-repoint">
-                                                    <a href="#" class="menu-bar">
+                                                    <button type="button" class="menu-bar" aria-label="Abrir menu lateral" aria-expanded="false" aria-controls="offcanvas-body-wrapper">
                                                         <span></span>
                                                         <span></span>
                                                         <span></span>
-                                                    </a>
-                                                    <a href="#" class="menu-times close">
+                                                    </button>
+                                                    <button type="button" class="menu-times close" aria-label="Fechar menu lateral">
                                                         <span></span>
                                                         <span></span>
-                                                    </a>
+                                                    </button>
                                                 </div>
                                             </li>
                                         </ul>
@@ -253,9 +317,10 @@
                 </div>
             </header>
             <!-- Header Area End Here -->
+            <main id="conteudo">
             <!-- News Slider Area Start Here -->
-            <section class="img-overlay-70">
-                <img src="img/banner/banner1.jpg" alt="banner" class="img-fluid m-auto display-block">
+            <section class="img-overlay-70" id="home-6__hero" data-widget-id="home-6.hero" data-widget-type="hero-banner">
+                <img loading="lazy" decoding="async" src="img/banner/banner1.jpg" alt="" class="img-fluid m-auto display-block">
                 <div class="container banner-content-style1">
                     <div class="topic-box-sm color-cod-gray mb-20 hidden-mb">Style Zone</div>
                     <div class="post-date-light">
@@ -281,19 +346,19 @@
             </section>
             <!-- News Slider Area End Here -->
             <!-- Feature News Area Start Here -->
-            <section class="section-space-less30">
+            <section class="section-space-less30" id="home-6__featured" data-widget-id="home-6.featured" data-widget-type="featured-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
                             <div class="hover-show-play-btn item-shadow-gray mb-30">
                                 <div class="img-overlay-70">
                                     <div class="topic-box-top-xs">
-                                        <div class="topic-box-sm color-cod-gray mb-20">Fashion</div>
+                                        <div class="topic-box-sm color-cod-gray mb-20">Moda</div>
                                     </div>
-                                    <img src="img/news/news288.jpg" alt="news" class="img-fluid">
+                                    <img loading="lazy" decoding="async" src="img/news/news288.jpg" alt="" class="img-fluid">
                                     <div class="text-center">
                                         <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                            <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
@@ -326,10 +391,10 @@
                                     <div class="topic-box-top-xs">
                                         <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
                                     </div>
-                                    <img src="img/news/news289.jpg" alt="news" class="img-fluid">
+                                    <img loading="lazy" decoding="async" src="img/news/news289.jpg" alt="" class="img-fluid">
                                     <div class="text-center">
                                         <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                            <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
@@ -360,12 +425,12 @@
                             <div class="hover-show-play-btn item-shadow-gray mb-30">
                                 <div class="img-overlay-70">
                                     <div class="topic-box-top-xs">
-                                        <div class="topic-box-sm color-cod-gray mb-20">Daily Wear</div>
+                                        <div class="topic-box-sm color-cod-gray mb-20">Dia a Dia</div>
                                     </div>
-                                    <img src="img/news/news290.jpg" alt="news" class="img-fluid">
+                                    <img loading="lazy" decoding="async" src="img/news/news290.jpg" alt="" class="img-fluid">
                                     <div class="text-center">
                                         <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                            <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
@@ -397,15 +462,15 @@
             </section>
             <!-- Feature News Area End Here -->
             <!-- Latest Articles Area Start Here -->
-            <section class="section-space-bottom-less30">
+            <section class="section-space-bottom-less30" id="home-6__latest-articles" data-widget-id="home-6.latest-articles" data-widget-type="latest-news">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 mb-30">
                             <div class="topic-border color-cod-gray mb-30">
-                                <div class="topic-box-lg color-cod-gray">Latest Articles</div>
+                                <div class="topic-box-lg color-cod-gray">Últimos Artigos</div>
                             </div>
                             <div class="img-overlay-70 img-scale-animate">
-                                <img src="img/news/news278.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/news/news278.jpg" alt="" class="img-fluid">
                                 <div class="mask-content-lg">
                                     <div class="topic-box-sm color-cod-gray mb-20 hidden-mb">Style Zone</div>
                                     <div class="post-date-light">
@@ -433,10 +498,10 @@
                                 <div class="media mb-30 media-none--sm">
                                     <div class="position-relative width-40">
                                         <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news279.jpg" alt="news" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/news/news279.jpg" alt="" class="img-fluid">
                                         </a>
                                         <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Fashion Today</div>
+                                            <div class="topic-box-sm color-cod-gray mb-20">Moda Hoje</div>
                                         </div>
                                     </div>
                                     <div class="media-body p-mb-none-child media-margin30">
@@ -463,7 +528,7 @@
                                 <div class="media mb-30 media-none--sm">
                                     <div class="position-relative width-40">
                                         <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news280.jpg" alt="news" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/news/news280.jpg" alt="" class="img-fluid">
                                         </a>
                                         <div class="topic-box-top-xs">
                                             <div class="topic-box-sm color-cod-gray mb-20">MaxRocket</div>
@@ -493,7 +558,7 @@
                                 <div class="media mb-30 media-none--sm">
                                     <div class="position-relative width-40">
                                         <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news281.jpg" alt="news" class="img-fluid">
+                                            <img loading="lazy" decoding="async" src="img/news/news281.jpg" alt="" class="img-fluid">
                                         </a>
                                         <div class="topic-box-top-xs">
                                             <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
@@ -522,10 +587,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ne-sidebar sidebar-break-md col-lg-4 col-md-12">
-                            <div class="sidebar-box">
+                        <div class="ne-sidebar sidebar-break-md col-lg-4 col-md-12" role="complementary" aria-label="Barra lateral">
+                            <div class="sidebar-box" id="home-6__sidebar-social" data-widget-id="home-6.sidebar.social" data-widget-type="sidebar-social">
                                 <div class="topic-border color-cod-gray mb-30">
-                                    <div class="topic-box-lg color-cod-gray">Stay Connected</div>
+                                    <div class="topic-box-lg color-cod-gray">Redes Sociais</div>
                                 </div>
                                 <ul class="stay-connected-light overflow-hidden mb-20">
                                     <li class="facebook">
@@ -558,26 +623,26 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar-box">
+                            <div class="sidebar-box" id="home-6__sidebar-ad-1" data-widget-id="home-6.sidebar.ad-1" data-widget-type="ad-banner">
                                 <div class="ne-banner-layout1 text-center">
                                     <a href="#">
-                                        <img src="img/banner/banner12.jpg" alt="ad" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/banner12.jpg" alt="ad" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
-                            <div class="sidebar-box">
+                            <div class="sidebar-box" id="home-6__sidebar-recent" data-widget-id="home-6.sidebar.recent" data-widget-type="sidebar-recent">
                                 <div class="topic-border color-cod-gray">
-                                    <div class="topic-box-lg color-cod-gray">Recent News</div>
+                                    <div class="topic-box-lg color-cod-gray">Notícias Recentes</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-6 mt-30">
                                         <div class="item-shadow-gray">
                                             <div class="position-relative">
                                                 <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Daily Wear</div>
+                                                    <div class="topic-box-sm color-cod-gray mb-20">Dia a Dia</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news283.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news283.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -594,7 +659,7 @@
                                                     <div class="topic-box-sm color-cod-gray mb-20">MaxRocket</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news284.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news284.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -608,10 +673,10 @@
                                         <div class="item-shadow-gray">
                                             <div class="position-relative">
                                                 <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Fashion</div>
+                                                    <div class="topic-box-sm color-cod-gray mb-20">Moda</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news285.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news285.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -628,7 +693,7 @@
                                                     <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news282.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news282.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -642,10 +707,10 @@
                                         <div class="item-shadow-gray">
                                             <div class="position-relative">
                                                 <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Daily Wear</div>
+                                                    <div class="topic-box-sm color-cod-gray mb-20">Dia a Dia</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news286.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news286.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -662,7 +727,7 @@
                                                     <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
                                                 </div>
                                                 <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news287.jpg" alt="news" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/news/news287.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="box-padding15 bg-body item-shadow-gray">
@@ -680,12 +745,12 @@
             </section>
             <!-- Latest Articles Area End Here -->
             <!-- Trending News Area Start Here -->
-            <section class="bg-secondary-accent section-space-bottom">
+            <section class="bg-secondary-accent section-space-bottom" id="home-6__trending" data-widget-id="home-6.trending" data-widget-type="trending-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="topic-border color-cod-gray mb-30 width-100">
-                                <div class="topic-box-lg color-cod-gray">Trending Posts</div>
+                                <div class="topic-box-lg color-cod-gray">Em Alta</div>
                             </div>
                         </div>
                     </div>
@@ -699,10 +764,10 @@
                                 <div class="topic-box-top-xs">
                                     <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
                                 </div>
-                                <img src="img/news/news274.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/news/news274.jpg" alt="" class="img-fluid">
                                 <div class="text-center">
                                     <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                        <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
@@ -723,12 +788,12 @@
                         <div class="hover-show-play-btn item-shadow-gray mb-1">
                             <div class="img-overlay-70">
                                 <div class="topic-box-top-xs">
-                                    <div class="topic-box-sm color-cod-gray mb-20">Fashion</div>
+                                    <div class="topic-box-sm color-cod-gray mb-20">Moda</div>
                                 </div>
-                                <img src="img/news/news275.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/news/news275.jpg" alt="" class="img-fluid">
                                 <div class="text-center">
                                     <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                        <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
@@ -749,12 +814,12 @@
                         <div class="hover-show-play-btn item-shadow-gray mb-1">
                             <div class="img-overlay-70">
                                 <div class="topic-box-top-xs">
-                                    <div class="topic-box-sm color-cod-gray mb-20">Daily wear</div>
+                                    <div class="topic-box-sm color-cod-gray mb-20">Dia a Dia</div>
                                 </div>
-                                <img src="img/news/news276.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/news/news276.jpg" alt="" class="img-fluid">
                                 <div class="text-center">
                                     <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                        <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
@@ -775,12 +840,12 @@
                         <div class="hover-show-play-btn item-shadow-gray mb-1">
                             <div class="img-overlay-70">
                                 <div class="topic-box-top-xs">
-                                    <div class="topic-box-sm color-cod-gray mb-20">Maxrocket</div>
+                                    <div class="topic-box-sm color-cod-gray mb-20">MaxRocket</div>
                                 </div>
-                                <img src="img/news/news277.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/news/news277.jpg" alt="" class="img-fluid">
                                 <div class="text-center">
                                     <a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
-                                        <img src="img/banner/play.png" alt="play" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/play.png" alt="play" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
@@ -803,14 +868,14 @@
             </section>
             <!-- Trending News Area Start Here -->
             <!-- Category Area Start Here -->
-            <section class="section-space-bottom-less30">
+            <section class="section-space-bottom-less30" id="home-6__categories" data-widget-id="home-6.categories" data-widget-type="category-boxes">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <div class="category-box-layout1 overlay-dark-level-2 img-grayscale-hover text-center mb-30">
-                                <img src="img/category/ctg7.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/category/ctg7.jpg" alt="" class="img-fluid">
                                 <div class="content p-30-r">
-                                    <div class="ctg-title-xs">Fashion</div>
+                                    <div class="ctg-title-xs">Moda</div>
                                     <h3 class="title-regular-light size-lg">
                                         <a href="post-style-1.html">Rebecca Taylor’s Breezy Spring 2017 Perfect For Kate Middleton</a>
                                     </h3>
@@ -831,9 +896,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="category-box-layout1 overlay-dark-level-2 img-grayscale-hover text-center mb-30">
-                                <img src="img/category/ctg8.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/category/ctg8.jpg" alt="" class="img-fluid">
                                 <div class="content p-30-r">
-                                    <div class="ctg-title-xs">Style ZOne</div>
+                                    <div class="ctg-title-xs">Style Zone</div>
                                     <h3 class="title-regular-light size-lg">
                                         <a href="post-style-2.html">Anna Kendrick Stuns In Hollywood Glam Waves At Toronto</a>
                                     </h3>
@@ -854,9 +919,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="category-box-layout1 overlay-dark-level-2 img-grayscale-hover text-center mb-30">
-                                <img src="img/category/ctg9.jpg" alt="news" class="img-fluid">
+                                <img loading="lazy" decoding="async" src="img/category/ctg9.jpg" alt="" class="img-fluid">
                                 <div class="content p-30-r">
-                                    <div class="ctg-title-xs">Travel</div>
+                                    <div class="ctg-title-xs">Viagem</div>
                                     <h3 class="title-regular-light size-lg">
                                         <a href="post-style-3.html">Rihanna Rocks Signature Red Lips At Alexander Wang Show</a>
                                     </h3>
@@ -880,22 +945,22 @@
             </section>
             <!-- Category Area End Here -->
             <!-- More News Area Start Here -->
-            <section class="section-space-bottom-less30">
+            <section class="section-space-bottom-less30" id="home-6__more-news" data-widget-id="home-6.more-news" data-widget-type="more-news">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12">
                             <div class="topic-border color-cod-gray mb-30">
-                                <div class="topic-box-lg color-cod-gray">More News</div>
+                                <div class="topic-box-lg color-cod-gray">Mais Notícias</div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 col-sm-6 col-12 mb-30">
                                     <div class="media item-shadow-gray bg-body media-none--sm">
                                         <div class="position-relative width-40 width46-lg">
                                             <a href="single-news-1.html" class="img-opacity-hover img-overlay-70">
-                                                <img src="img/news/news270.jpg" alt="news" class="img-fluid">
+                                                <img loading="lazy" decoding="async" src="img/news/news270.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Fashion</div>
+                                                <div class="topic-box-sm color-cod-gray mb-20">Moda</div>
                                             </div>
                                         </div>
                                         <div class="media-body media-padding30 p-mb-none-child">
@@ -924,10 +989,10 @@
                                     <div class="media item-shadow-gray bg-body media-none--sm">
                                         <div class="position-relative width-40 width46-lg">
                                             <a href="single-news-1.html" class="img-opacity-hover img-overlay-70">
-                                                <img src="img/news/news271.jpg" alt="news" class="img-fluid">
+                                                <img loading="lazy" decoding="async" src="img/news/news271.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Style zone</div>
+                                                <div class="topic-box-sm color-cod-gray mb-20">Style Zone</div>
                                             </div>
                                         </div>
                                         <div class="media-body media-padding30 p-mb-none-child">
@@ -956,10 +1021,10 @@
                                     <div class="media item-shadow-gray bg-body media-none--sm">
                                         <div class="position-relative width-40 width46-lg">
                                             <a href="single-news-1.html" class="img-opacity-hover img-overlay-70">
-                                                <img src="img/news/news272.jpg" alt="news" class="img-fluid">
+                                                <img loading="lazy" decoding="async" src="img/news/news272.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Daily Wear</div>
+                                                <div class="topic-box-sm color-cod-gray mb-20">Dia a Dia</div>
                                             </div>
                                         </div>
                                         <div class="media-body media-padding30 p-mb-none-child">
@@ -988,10 +1053,10 @@
                                     <div class="media item-shadow-gray bg-body media-none--sm">
                                         <div class="position-relative width-40 width46-lg">
                                             <a href="single-news-1.html" class="img-opacity-hover img-overlay-70">
-                                                <img src="img/news/news273.jpg" alt="news" class="img-fluid">
+                                                <img loading="lazy" decoding="async" src="img/news/news273.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Maxrocke</div>
+                                                <div class="topic-box-sm color-cod-gray mb-20">MaxRocket</div>
                                             </div>
                                         </div>
                                         <div class="media-body media-padding30 p-mb-none-child">
@@ -1018,10 +1083,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ne-sidebar sidebar-break-md col-lg-4 col-md-12">
-                            <div class="sidebar-box">
+                        <div class="ne-sidebar sidebar-break-md col-lg-4 col-md-12" role="complementary" aria-label="Barra lateral">
+                            <div class="sidebar-box" id="home-6__sidebar-reviews" data-widget-id="home-6.sidebar.reviews" data-widget-type="sidebar-reviews">
                                 <div class="topic-border color-cod-gray mb-30">
-                                    <div class="topic-box-lg color-cod-gray">Latest Reviews</div>
+                                    <div class="topic-box-lg color-cod-gray">Últimas Avaliações</div>
                                 </div>
                                 <ul class="archive-list2 mb-25">
                                     <li>
@@ -1061,25 +1126,25 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar-box">
+                            <div class="sidebar-box" id="home-6__sidebar-ad-2" data-widget-id="home-6.sidebar.ad-2" data-widget-type="ad-banner">
                                 <div class="ne-banner-layout2 text-center">
                                     <a href="#">
-                                        <img src="img/banner/banner5.jpg" alt="ad" class="img-fluid">
+                                        <img loading="lazy" decoding="async" src="img/banner/banner5.jpg" alt="ad" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
-                            <div class="sidebar-box">
+                            <div class="sidebar-box" id="home-6__sidebar-newsletter" data-widget-id="home-6.sidebar.newsletter" data-widget-type="sidebar-newsletter">
                                 <div class="topic-border color-cod-gray mb-30">
                                     <div class="topic-box-lg color-cod-gray">Newsletter</div>
                                 </div>
                                 <div class="newsletter-area bg-primary">
                                     <h2 class="title-medium-light size-xl">Subscribe to our mailing list to get the new updates!</h2>
-                                    <img src="img/banner/newsletter.png" alt="newsletter" class="img-fluid m-auto mb-15">
+                                    <img loading="lazy" decoding="async" src="img/banner/newsletter.png" alt="newsletter" class="img-fluid m-auto mb-15">
                                     <p>Subscribe our newsletter to stay updated</p>
                                     <div class="input-group stylish-input-group">
-                                        <input type="text" placeholder="Enter your mail" class="form-control">
+                                        <input type="email" placeholder="Enter your mail" class="form-control" aria-label="E-mail para newsletter" name="email" autocomplete="email">
                                         <span class="input-group-addon">
-                                            <button type="submit">
+                                            <button type="submit" aria-label="Assinar newsletter">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                                             </button>
                                         </span>
@@ -1091,8 +1156,9 @@
                 </div>
             </section>
             <!-- More News Area End Here -->
+            </main>
             <!-- Footer Area Start Here -->
-            <footer>
+            <footer id="home-6__footer" data-widget-id="home-6.footer" data-widget-type="site-footer">
                 <div class="footer-area-top">
                     <div class="container">
                         <div class="row">
@@ -1103,7 +1169,7 @@
                                         <li>
                                             <div class="media">
                                                 <a href="post-style-1.html">
-                                                    <img src="img/footer/post1.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post1.jpg" alt="" class="img-fluid">
                                                 </a>
                                                 <div class="media-body">
                                                     <h3 class="title-medium-light size-md mb-10">
@@ -1123,7 +1189,7 @@
                                         <li>
                                             <div class="media">
                                                 <a href="post-style-2.html">
-                                                    <img src="img/footer/post2.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post2.jpg" alt="" class="img-fluid">
                                                 </a>
                                                 <div class="media-body">
                                                     <h3 class="title-medium-light size-md mb-10">
@@ -1143,7 +1209,7 @@
                                         <li>
                                             <div class="media">
                                                 <a href="post-style-3.html">
-                                                    <img src="img/footer/post3.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post3.jpg" alt="" class="img-fluid">
                                                 </a>
                                                 <div class="media-body">
                                                     <h3 class="title-medium-light size-md mb-10">
@@ -1217,63 +1283,63 @@
                                         <li>
                                             <a href="gallery-style1.html">
                                                 <figure>
-                                                    <img src="img/footer/post4.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post4.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style2.html">
                                                 <figure>
-                                                    <img src="img/footer/post5.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post5.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style1.html">
                                                 <figure>
-                                                    <img src="img/footer/post6.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post6.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style2.html">
                                                 <figure>
-                                                    <img src="img/footer/post7.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post7.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style1.html">
                                                 <figure>
-                                                    <img src="img/footer/post8.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post8.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style2.html">
                                                 <figure>
-                                                    <img src="img/footer/post9.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post9.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style1.html">
                                                 <figure>
-                                                    <img src="img/footer/post10.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post10.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style2.html">
                                                 <figure>
-                                                    <img src="img/footer/post11.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post11.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="gallery-style1.html">
                                                 <figure>
-                                                    <img src="img/footer/post12.jpg" alt="post" class="img-fluid">
+                                                    <img loading="lazy" decoding="async" src="img/footer/post12.jpg" alt="post" class="img-fluid">
                                                 </figure>
                                             </a>
                                         </li>
@@ -1288,46 +1354,47 @@
                         <div class="row">
                             <div class="col-12 text-center">
                                 <a href="index-2.html" class="footer-logo img-fluid">
-                                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                                    <img src="img/logo.png" alt="Notícias Mobile" class="img-fluid">
                                 </a>
                                 <ul class="footer-social">
                                     <li>
-                                        <a href="#" title="facebook">
+                                        <a href="#" aria-label="Facebook" title="facebook">
                                             <i class="fa fa-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="twitter">
+                                        <a href="#" aria-label="Twitter" title="twitter">
                                             <i class="fa fa-twitter" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="google-plus">
+                                        <a href="#" aria-label="Google Plus" title="google-plus">
                                             <i class="fa fa-google-plus" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="linkedin">
+                                        <a href="#" aria-label="LinkedIn" title="linkedin">
                                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="pinterest">
+                                        <a href="#" aria-label="Pinterest" title="pinterest">
                                             <i class="fa fa-pinterest" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="rss">
+                                        <a href="#" aria-label="RSS" title="rss">
                                             <i class="fa fa-rss" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="vimeo">
+                                        <a href="#" aria-label="Vimeo" title="vimeo">
                                             <i class="fa fa-vimeo" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                 </ul>
-                                <p>© 2017 newsedge Designed by RadiusTheme. All Rights Reserved</p>
+<p class="ne-cmp-footer-link-wrap"><a href="acessibilidade.html" class="ne-cmp-footer-link">Acessibilidade</a> · <a href="privacy.html" class="ne-cmp-footer-link">Política de Privacidade</a> · <button type="button" class="ne-cmp-btn ne-cmp-btn-ghost ne-cmp-footer-link" data-cmp-action="open-preferences">Preferências de cookies</button></p>
+                                <p>© 2026 Notícias Mobile — hub de notícias sobre mobile. Os direitos do conteúdo pertencem às respectivas fontes.</p>
                             </div>
                         </div>
                     </div>
@@ -1335,26 +1402,26 @@
             </footer>
             <!-- Footer Area End Here -->
             <!-- Modal Start-->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="myModal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <div class="title-login-form">Login</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">&times;</button>
+                            <div class="title-login-form" id="login-modal-title">Login</div>
                         </div>
                         <div class="modal-body">
                             <div class="login-form">
                                 <form>
-                                    <label>Username or email address *</label>
-                                    <input type="text" placeholder="Name or E-mail" />
-                                    <label>Password *</label>
-                                    <input type="password" placeholder="Password" />
+                                    <label for="login-username">Username or email address *</label>
+                                    <input id="login-username" type="text" name="username" placeholder="Name or E-mail" autocomplete="username" required />
+                                    <label for="login-password">Password *</label>
+                                    <input id="login-password" type="password" name="password" placeholder="Password" autocomplete="current-password" required />
                                     <div class="checkbox checkbox-primary">
                                         <input id="checkbox" type="checkbox" checked>
                                         <label for="checkbox">Remember Me</label>
                                     </div>
                                     <button type="submit" value="Login">Login</button>
-                                    <button class="form-cancel" type="submit" value="">Cancel</button>
+                                    <button class="form-cancel" type="button" data-dismiss="modal" value="">Cancel</button>
                                     <label class="lost-password">
                                         <a href="#">Lost your password?</a>
                                     </label>
@@ -1368,10 +1435,10 @@
             <!-- Offcanvas Menu Start -->
             <div id="offcanvas-body-wrapper" class="offcanvas-body-wrapper">
                 <div id="offcanvas-nav-close" class="offcanvas-nav-close offcanvas-menu-btn">
-                    <a href="#" class="menu-times re-point">
+                    <button type="button" class="menu-times re-point" aria-label="Fechar menu lateral">
                         <span></span>
                         <span></span>
-                    </a>
+                    </button>
                 </div>
                 <div class="offcanvas-main-body">
                     <ul id="accordion" class="offcanvas-nav panel-group">
@@ -1519,6 +1586,42 @@
         <script src="js/ticker.js" type="text/javascript"></script>
         <!-- Custom Js -->
         <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/theme.js" type="text/javascript"></script>
+
+        <!-- Notícias Mobile CMP Start -->
+        <div id="noticiasmobile-cmp-banner" class="ne-cmp-banner" role="dialog" aria-modal="true" aria-labelledby="ne-cmp-title" aria-describedby="ne-cmp-desc">
+            <div class="ne-cmp-inner">
+                <div class="ne-cmp-copy">
+                    <h2 id="ne-cmp-title">Preferências de cookies e privacidade</h2>
+                    <p id="ne-cmp-desc">Usamos cookies essenciais e, com seu consentimento, cookies de analytics e publicidade. Você pode aceitar tudo, manter apenas o básico ou recusar cookies não essenciais. Consulte a <a href="privacy.html">Política de Privacidade</a>.</p>
+                </div>
+                <div class="ne-cmp-actions">
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-ghost" data-cmp-action="open-preferences">Gerenciar preferências</button>
+                    <button type="button" class="ne-cmp-btn" data-cmp-action="deny">Recusar</button>
+                    <button type="button" class="ne-cmp-btn" data-cmp-action="accept-basic">Básico</button>
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-primary" data-cmp-action="accept-all">Aceitar tudo</button>
+                </div>
+            </div>
+        </div>
+        <div id="noticiasmobile-cmp-modal" class="ne-cmp-modal" role="dialog" aria-modal="true" aria-labelledby="ne-cmp-modal-title" hidden>
+            <div class="ne-cmp-dialog">
+                <h2 id="ne-cmp-modal-title">Gerenciar preferências</h2>
+                <fieldset>
+                    <label><input type="checkbox" checked disabled> <span>Essenciais <small>Necessários para segurança, tema e lembrar sua escolha.</small></span></label>
+                    <label><input type="checkbox" name="cmp-analytics"> <span>Analytics <small>Google Analytics (GA4) para medir audiência.</small></span></label>
+                    <label><input type="checkbox" name="cmp-advertising"> <span>Publicidade <small>Google Ads / banners personalizados.</small></span></label>
+                    <label><input type="checkbox" name="cmp-personalization"> <span>Preferências <small>Personalização leve de experiência (ex.: tema).</small></span></label>
+                </fieldset>
+                <div class="ne-cmp-dialog-actions">
+                    <button type="button" class="ne-cmp-btn ne-cmp-close" data-cmp-action="close-preferences">Fechar</button>
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-primary" data-cmp-action="save-preferences">Salvar preferências</button>
+                </div>
+            </div>
+        </div>
+        <!-- Notícias Mobile CMP End -->
+
+            <script src="js/consent.js" type="text/javascript"></script>
+        <script src="js/analytics.js" type="text/javascript"></script>
     </body>
 
 </html>

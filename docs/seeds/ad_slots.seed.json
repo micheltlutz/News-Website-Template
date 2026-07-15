@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "source": "screen-map.json widgets type=ad-banner",
+  "count": 24,
+  "adSlots": [
+    {
+      "widgetId": "home-1.sidebar.ad-1",
+      "pageId": "home-1",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "home-1_sidebar_ad-1"
+    },
+    {
+      "widgetId": "home-1.ad-after-top",
+      "pageId": "home-1",
+      "label": "Banner Após Destaques",
+      "region": "main",
+      "slotKey": "home-1_ad-after-top"
+    },
+    {
+      "widgetId": "home-1.ad-latest",
+      "pageId": "home-1",
+      "label": "Banner Últimas Notícias",
+      "region": "main",
+      "slotKey": "home-1_ad-latest"
+    },
+    {
+      "widgetId": "home-1.sidebar.ad-2",
+      "pageId": "home-1",
+      "label": "Anúncio Sidebar (2)",
+      "region": "sidebar",
+      "slotKey": "home-1_sidebar_ad-2"
+    },
+    {
+      "widgetId": "home-2.ad-after-top",
+      "pageId": "home-2",
+      "label": "Banner Após Destaques",
+      "region": "main",
+      "slotKey": "home-2_ad-after-top"
+    },
+    {
+      "widgetId": "home-2.sidebar.ad-1",
+      "pageId": "home-2",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "home-2_sidebar_ad-1"
+    },
+    {
+      "widgetId": "home-2.ad-category",
+      "pageId": "home-2",
+      "label": "Banner Categorias",
+      "region": "main",
+      "slotKey": "home-2_ad-category"
+    },
+    {
+      "widgetId": "home-3.sidebar.ad-1",
+      "pageId": "home-3",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "home-3_sidebar_ad-1"
+    },
+    {
+      "widgetId": "home-3.ad-after-top",
+      "pageId": "home-3",
+      "label": "Banner Após Destaques",
+      "region": "main",
+      "slotKey": "home-3_ad-after-top"
+    },
+    {
+      "widgetId": "home-5.sidebar.ad-1",
+      "pageId": "home-5",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "home-5_sidebar_ad-1"
+    },
+    {
+      "widgetId": "home-5.sidebar.ad-2",
+      "pageId": "home-5",
+      "label": "Anúncio Sidebar (2)",
+      "region": "sidebar",
+      "slotKey": "home-5_sidebar_ad-2"
+    },
+    {
+      "widgetId": "home-6.sidebar.ad-1",
+      "pageId": "home-6",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "home-6_sidebar_ad-1"
+    },
+    {
+      "widgetId": "home-6.sidebar.ad-2",
+      "pageId": "home-6",
+      "label": "Anúncio Sidebar (2)",
+      "region": "sidebar",
+      "slotKey": "home-6_sidebar_ad-2"
+    },
+    {
+      "widgetId": "post-1.sidebar.ad",
+      "pageId": "post-1",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "post-1_sidebar_ad"
+    },
+    {
+      "widgetId": "post-2.sidebar.ad",
+      "pageId": "post-2",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "post-2_sidebar_ad"
+    },
+    {
+      "widgetId": "post-3.sidebar.ad",
+      "pageId": "post-3",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "post-3_sidebar_ad"
+    },
+    {
+      "widgetId": "post-4.sidebar.ad",
+      "pageId": "post-4",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "post-4_sidebar_ad"
+    },
+    {
+      "widgetId": "archive.sidebar.ad",
+      "pageId": "archive",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "archive_sidebar_ad"
+    },
+    {
+      "widgetId": "author.sidebar.ad",
+      "pageId": "author",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "author_sidebar_ad"
+    },
+    {
+      "widgetId": "article-1.sidebar.ad",
+      "pageId": "article-1",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "article-1_sidebar_ad"
+    },
+    {
+      "widgetId": "article-2.sidebar.ad",
+      "pageId": "article-2",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "article-2_sidebar_ad"
+    },
+    {
+      "widgetId": "article-3.sidebar.ad",
+      "pageId": "article-3",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "article-3_sidebar_ad"
+    },
+    {
+      "widgetId": "contact.sidebar.ad",
+      "pageId": "contact",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "contact_sidebar_ad"
+    },
+    {
+      "widgetId": "privacy.sidebar.ad",
+      "pageId": "privacy",
+      "label": "Anúncio Sidebar",
+      "region": "sidebar",
+      "slotKey": "privacy_sidebar_ad"
+    }
+  ]
+}

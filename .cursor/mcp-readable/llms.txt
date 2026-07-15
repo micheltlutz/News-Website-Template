@@ -1,0 +1,80 @@
+# MlHub API
+
+> REST API for ML Terminal Snippets — skill repositories, project templates, terminal snippets, SSH presets, crash tracking, and activity task management. Vapor 4 + PostgreSQL.
+
+## Machine-readable
+
+- OpenAPI 3: GET /openapi.yaml (repo copy: docs/openapi.yaml)
+- This file: GET /llms.txt
+
+## Base URLs
+
+- Development: http://localhost:8080
+- Docker (default): http://localhost:4141
+
+## Authentication
+
+None in v1. API is intended for trusted local network use.
+
+## Resources
+
+- GET/POST /api/repositories — skill git repositories; slug must be unique (409 on duplicate)
+- GET/POST /api/skills — Cursor Agent Skills; requires valid repositoryId (400); repositorySlug/gitURL read-only in responses
+- GET/POST /api/mcp-servers — Cursor MCP server presets; requires valid repositoryId (400); repositorySlug/gitURL read-only in responses
+- GET/POST /api/projects — project templates; includes selectedSkillSlugs array; DELETE blocked if crash reports, activity logs, or activity tasks exist → 409
+- GET/POST /api/crash-reports — app crash reports linked to projects; projectName read-only; filter ?projectId=
+- POST /api/crash-reports/import — Crashlytics upsert by externalId
+- GET /api/crash-reports/{id}/detail — aggregated report + diagnoses + fix strategy + postmortem
+- GET/POST /api/crash-diagnoses — diagnosis notes; crashReportId required; optional ?crashReportId=
+- GET/POST /api/crash-fix-strategies — one per crash report → 409 on duplicate
+- GET/POST /api/crash-postmortems — one per crash report; publishedAt sets status postmortem_published
+- GET/POST /api/activity-logs — daily activity logs linked to projects; projectName read-only; filter ?projectId= ?logDate=
+- GET /api/activity-logs/{id}/detail — aggregated log + tasks
+- GET/POST /api/activity-tasks — tasks within a log; requires projectId + activityLogId; filter ?projectId= ?activityLogId= ?status= ?category=
+- GET/POST /api/snippet-categories — groups for terminal snippets
+- GET/POST /api/terminal-snippets — command snippets; requires valid categoryId
+- GET/POST /api/ssh-connections — SSH presets (display paths only, no secret keys)
+- GET /health — liveness; GET /health?db=1 — includes PostgreSQL ping
+
+All resources support GET/PUT/DELETE /api/{resource}/{id} with UUID path parameter.
+
+## JSON conventions
+
+- Property names: camelCase (not snake_case)
+- Dates: ISO8601 strings
+- IDs: UUID strings
+- Successful DELETE: HTTP 204 No Content
+- Errors: JSON { "reason": "...", "error": true }
+
+## Business rules
+
+- repositories.slug is UNIQUE → 409 Conflict on create/update collision
+- DELETE /api/repositories/{id} with linked skills or MCP servers → 409 Conflict
+- DELETE /api/snippet-categories/{id} with child snippets → 409 Conflict
+- DELETE /api/projects/{id} with crash reports, activity logs, or activity tasks → 409 Conflict
+- POST /api/activity-tasks duplicate externalId for same projectId → 409 Conflict
+- POST /api/activity-tasks with activityLogId from another project → 400 Bad Request
+- POST /api/crash-fix-strategies duplicate for same crashReportId → 409 Conflict
+- POST /api/crash-postmortems duplicate for same crashReportId → 409 Conflict
+- POST /api/crash-reports/import upserts by (source=crashlytics, externalId)
+- POST /api/skills with unknown repositoryId → 400 Bad Request
+- POST /api/mcp-servers with unknown repositoryId → 400 Bad Request
+- POST /api/terminal-snippets with unknown categoryId → 400 Bad Request
+- Invalid UUID in path → 400 Bad Request
+- Missing resource → 404 Not Found
+
+## Typical agent workflow
+
+1. GET /health?db=1 — confirm API and database
+2. GET /openapi.yaml — load full schemas and operationIds
+3. GET /api/{resource} — list before create to avoid duplicates
+4. Use request body schemas from OpenAPI components (Create* schemas)
+
+## Full guides
+
+- AGENTS.md — detailed instructions for AI agents
+- docs/templates/crash-incident-workflow.md — markdown template for crash incident registration
+- docs/api.md — human-oriented API guide with curl examples
+- docs/adr/005-dominio-terminal-snippets.md — domain model and FK relationships
+- docs/adr/010-dominio-crash-tracking.md — crash workflow domain
+- docs/adr/011-dominio-gestao-atividades.md — activity log/task domain

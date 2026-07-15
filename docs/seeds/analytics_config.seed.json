@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "source": "js/analytics.js + STYLE-GUIDE §11.4",
+  "analyticsConfig": {
+    "provider": "ga4",
+    "measurementId": "G-XXXXXXXXXX",
+    "gtmContainerId": null,
+    "anonymizeIp": true,
+    "sendPageView": false,
+    "consentModeV2": true,
+    "enabled": false,
+    "eventsEnabled": [
+      "page_view",
+      "select_content",
+      "view_item",
+      "share",
+      "click_ad",
+      "generate_lead",
+      "search",
+      "cookie_consent_update"
+    ],
+    "clientBootstrap": "window.NoticiasMobileAnalyticsConfig = { measurementId: '<analytics_config.measurement_id>' }"
+  }
+}

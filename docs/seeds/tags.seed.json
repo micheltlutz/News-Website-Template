@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "docs/TAGS.md / HTML blog-tags + sidebar-tags",
+  "count": 11,
+  "tags": [
+    { "slug": "business", "label": "Business" },
+    { "slug": "magazine", "label": "Magazine" },
+    { "slug": "lifestyle", "label": "Lifestyle" },
+    { "slug": "apple", "label": "Apple" },
+    { "slug": "architecture", "label": "Architecture" },
+    { "slug": "gadgets", "label": "Gadgets" },
+    { "slug": "software", "label": "Software" },
+    { "slug": "microsoft", "label": "Microsoft" },
+    { "slug": "robotic", "label": "Robotic" },
+    { "slug": "technology", "label": "Technology" },
+    { "slug": "others", "label": "Others" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "source": "Modelo mínimo de cadastro (sem IDs reais) — referência para Fluent/backoffice",
+  "exampleArticle": {
+    "slug": "exemplo-destaque-politica",
+    "title": "Exemplo de notícia em destaque",
+    "excerpt": "Resumo curto exibido em cards e listas media.",
+    "bodyHtml": "<p>Corpo HTML do artigo…</p>",
+    "status": "draft",
+    "categorySlug": "politics",
+    "authorSlug": "redacao",
+    "tagSlugs": ["business", "magazine"],
+    "isFeatured": true,
+    "allowComments": true,
+    "videoUrl": null,
+    "seo": {
+      "metaTitle": "Exemplo de notícia em destaque | Notícias Mobile",
+      "metaDescription": "Resumo curto para SERP e OG.",
+      "robots": "index,follow",
+      "ogType": "article"
+    },
+    "widgetPins": [
+      {
+        "widgetId": "home-1.hero",
+        "sortOrder": 0,
+        "notes": "Após publicar, opcionalmente fixar em widget_binding_articles"
+      }
+    ]
+  },
+  "statusFlow": ["draft", "scheduled", "published", "archived"]
+}

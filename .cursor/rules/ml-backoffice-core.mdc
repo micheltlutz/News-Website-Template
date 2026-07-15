@@ -1,0 +1,28 @@
+---
+description: Contexto essencial do ml-hub API (Vapor, ADRs, skills)
+alwaysApply: true
+---
+
+# Notícias Mobile (noticias-mobile)
+
+API REST **noticias-mobile**: **Vapor 4 + Fluent + PostgreSQL** (Swift 6, SPM). Domínio: ML Terminal Snippets (projects, repositories, snippets, SSH).
+
+## Estrutura
+
+`Sources/noticias-mobile/{Commands,Controllers,DTOs,Infrastructure/Database/{Models,Repositories},Migrations,Application/Services}`
+
+## Antes de codar
+
+1. Ler `.cursor/skills/server-side-swift/ml-backoffice-patterns.md` (padrões Vapor; adaptar target `MlHub`)
+2. Consultar ADRs em `docs/adr/` (001–007)
+3. Novo recurso CRUD: Controller → Repository → DTO (ADR-003)
+4. Migrations: schema API-owned → Fluent `AsyncMigration` em `Sources/MlHub/Migrations/` (ADR-002)
+
+## Docs Vapor
+
+- [Routing](https://docs.vapor.codes/basics/routing/)
+- [Fluent](https://docs.vapor.codes/fluent/overview/)
+- [Middleware](https://docs.vapor.codes/advanced/middleware/)
+- [Validation](https://docs.vapor.codes/basics/validation/)
+
+Ver também `README.md` e `docs/api.md`.

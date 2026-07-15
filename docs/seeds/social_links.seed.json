@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "source": "sidebar Stay Connected / footer social / article-share",
+  "socialLinks": [
+    {
+      "network": "facebook",
+      "label": "Facebook",
+      "url": "https://facebook.com/",
+      "iconClass": "fa-facebook",
+      "followerCount": 0,
+      "sortOrder": 1,
+      "showInSidebar": true,
+      "showInFooter": true,
+      "showInShare": true
+    },
+    {
+      "network": "twitter",
+      "label": "X / Twitter",
+      "url": "https://twitter.com/",
+      "iconClass": "fa-twitter",
+      "followerCount": 0,
+      "sortOrder": 2,
+      "showInSidebar": true,
+      "showInFooter": true,
+      "showInShare": true
+    },
+    {
+      "network": "youtube",
+      "label": "YouTube",
+      "url": "https://youtube.com/",
+      "iconClass": "fa-youtube",
+      "followerCount": 0,
+      "sortOrder": 3,
+      "showInSidebar": true,
+      "showInFooter": true,
+      "showInShare": false
+    },
+    {
+      "network": "instagram",
+      "label": "Instagram",
+      "url": "https://instagram.com/",
+      "iconClass": "fa-instagram",
+      "followerCount": 0,
+      "sortOrder": 4,
+      "showInSidebar": true,
+      "showInFooter": true,
+      "showInShare": true
+    },
+    {
+      "network": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/",
+      "iconClass": "fa-linkedin",
+      "followerCount": 0,
+      "sortOrder": 5,
+      "showInSidebar": false,
+      "showInFooter": true,
+      "showInShare": true
+    },
+    {
+      "network": "rss",
+      "label": "RSS",
+      "url": "/rss.xml",
+      "iconClass": "fa-rss",
+      "followerCount": 0,
+      "sortOrder": 6,
+      "showInSidebar": true,
+      "showInFooter": true,
+      "showInShare": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "source": "header nav / footer (template demo)",
+  "menuItems": [
+    { "menuKey": "header", "label": "Home", "href": "index.html", "pageId": "home-1", "sortOrder": 1, "children": [
+      { "label": "Home 1", "href": "index.html", "pageId": "home-1", "sortOrder": 1 },
+      { "label": "Home 2", "href": "index2.html", "pageId": "home-2", "sortOrder": 2 },
+      { "label": "Home 3", "href": "index3.html", "pageId": "home-3", "sortOrder": 3 },
+      { "label": "Home 4", "href": "index4.html", "pageId": "home-4", "sortOrder": 4 },
+      { "label": "Home 5", "href": "index5.html", "pageId": "home-5", "sortOrder": 5 },
+      { "label": "Home 6", "href": "index6.html", "pageId": "home-6", "sortOrder": 6 },
+      { "label": "Home 7", "href": "index7.html", "pageId": "home-7", "sortOrder": 7 }
+    ]},
+    { "menuKey": "header", "label": "Postagens", "href": "post-style-1.html", "pageId": "post-1", "sortOrder": 2, "children": [
+      { "label": "Post Style 1", "href": "post-style-1.html", "pageId": "post-1", "sortOrder": 1 },
+      { "label": "Post Style 2", "href": "post-style-2.html", "pageId": "post-2", "sortOrder": 2 },
+      { "label": "Post Style 3", "href": "post-style-3.html", "pageId": "post-3", "sortOrder": 3 },
+      { "label": "Post Style 4", "href": "post-style-4.html", "pageId": "post-4", "sortOrder": 4 }
+    ]},
+    { "menuKey": "header", "label": "Artigo", "href": "single-news-1.html", "pageId": "article-1", "sortOrder": 3, "children": [
+      { "label": "News Details 1", "href": "single-news-1.html", "pageId": "article-1", "sortOrder": 1 },
+      { "label": "News Details 2", "href": "single-news-2.html", "pageId": "article-2", "sortOrder": 2 },
+      { "label": "News Details 3", "href": "single-news-3.html", "pageId": "article-3", "sortOrder": 3 }
+    ]},
+    { "menuKey": "header", "label": "Autor", "href": "author-post.html", "pageId": "author", "sortOrder": 4 },
+    { "menuKey": "header", "label": "Arquivo", "href": "archive.html", "pageId": "archive", "sortOrder": 5 },
+    { "menuKey": "header", "label": "Galeria", "href": "gallery-style-1.html", "pageId": "gallery-1", "sortOrder": 6, "children": [
+      { "label": "Gallery Style 1", "href": "gallery-style-1.html", "pageId": "gallery-1", "sortOrder": 1 },
+      { "label": "Gallery Style 2", "href": "gallery-style-2.html", "pageId": "gallery-2", "sortOrder": 2 }
+    ]},
+    { "menuKey": "header", "label": "Contato", "href": "contact.html", "pageId": "contact", "sortOrder": 7 },
+    { "menuKey": "footer", "label": "Política de Privacidade", "href": "privacy.html", "pageId": "privacy", "sortOrder": 1 },
+    { "menuKey": "footer", "label": "Contato", "href": "contact.html", "pageId": "contact", "sortOrder": 2 },
+    { "menuKey": "footer", "label": "Arquivo", "href": "archive.html", "pageId": "archive", "sortOrder": 3 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "STYLE-GUIDE §11 + ad-banner widgets",
+  "googleAdsConfig": {
+    "publisherId": null,
+    "consentModeEnabled": true,
+    "defaultAdStorage": "denied",
+    "enabled": false,
+    "notes": "Creatives (ad_creatives) só carregam com ad_storage=granted (Consent Mode v2)"
+  }
+}

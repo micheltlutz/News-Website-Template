@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "source": "docs/CATEGORIES.md",
+  "count": 81,
+  "categories": [
+    {
+      "slug": "politics",
+      "labelPtBr": "Política",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "fashion",
+      "labelPtBr": "Moda",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "travel",
+      "labelPtBr": "Viagem",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "gadget",
+      "labelPtBr": "Gadget / Gadgets",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "sports",
+      "labelPtBr": "Esportes",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "business",
+      "labelPtBr": "Negócios",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "technology",
+      "labelPtBr": "Tecnologia",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "tech-world",
+      "labelPtBr": "Mundo Tech",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "lifestyle",
+      "labelPtBr": "Lifestyle",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "food",
+      "labelPtBr": "Gastronomia",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "health-fitness",
+      "labelPtBr": "Saúde & Fitness",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "fitness",
+      "labelPtBr": "Fitness",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "music",
+      "labelPtBr": "Música",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "education",
+      "labelPtBr": "Educação",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "nature",
+      "labelPtBr": "Natureza",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "android",
+      "labelPtBr": "Android",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "accessories",
+      "labelPtBr": "Acessórios",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "international",
+      "labelPtBr": "Internacional",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "games",
+      "labelPtBr": "Games",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "animation",
+      "labelPtBr": "Animação",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "action",
+      "labelPtBr": "Ação",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "racing",
+      "labelPtBr": "Corrida",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "electronics",
+      "labelPtBr": "Eletrônicos",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "software",
+      "labelPtBr": "Software",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "style-zone",
+      "labelPtBr": "Style Zone",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "public",
+      "labelPtBr": "Público",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "adventure",
+      "labelPtBr": "Aventura",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "corporate",
+      "labelPtBr": "Corporativo",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "people",
+      "labelPtBr": "Pessoas",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "world",
+      "labelPtBr": "Mundo",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "camera",
+      "labelPtBr": "Câmera",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "application",
+      "labelPtBr": "Aplicativos",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "model",
+      "labelPtBr": "Modelo",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "picture",
+      "labelPtBr": "Foto",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "flower",
+      "labelPtBr": "Flores",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "daily-wear",
+      "labelPtBr": "Dia a Dia",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "fashion-today",
+      "labelPtBr": "Moda Hoje",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "brand.apple",
+      "labelPtBr": "Apple",
+      "parentSlug": null,
+      "kind": "brand"
+    },
+    {
+      "slug": "brand.ipad",
+      "labelPtBr": "iPad",
+      "parentSlug": null,
+      "kind": "brand"
+    },
+    {
+      "slug": "brand.maxrocket",
+      "labelPtBr": "MaxRocket",
+      "parentSlug": null,
+      "kind": "brand"
+    },
+    {
+      "slug": "sports.football",
+      "labelPtBr": "Futebol",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.boxing",
+      "labelPtBr": "Boxe",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.cycling",
+      "labelPtBr": "Ciclismo",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.diving",
+      "labelPtBr": "Mergulho",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.racing",
+      "labelPtBr": "Corrida",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.riding",
+      "labelPtBr": "Hipismo",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.horse-racing",
+      "labelPtBr": "Turfe",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.bike-racing",
+      "labelPtBr": "Motovelocidade",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.bike-riding",
+      "labelPtBr": "Ciclismo",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.car-racing",
+      "labelPtBr": "Automobilismo",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.rugby",
+      "labelPtBr": "Rúgbi",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.cricket",
+      "labelPtBr": "Críquete",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.golf",
+      "labelPtBr": "Golf",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.baseball",
+      "labelPtBr": "Beisebol",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.tennis",
+      "labelPtBr": "Tênis",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.swimming",
+      "labelPtBr": "Natação",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.boat",
+      "labelPtBr": "Náutica",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "sports.desert",
+      "labelPtBr": "Deserto",
+      "parentSlug": "sports",
+      "kind": "category"
+    },
+    {
+      "slug": "food.drinks",
+      "labelPtBr": "Bebidas",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.fast-food",
+      "labelPtBr": "Fast Food",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.burger",
+      "labelPtBr": "Hambúrguer",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.pizza",
+      "labelPtBr": "Pizza",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.beef-pizza",
+      "labelPtBr": "Pizza de Carne",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.chicken-pizza",
+      "labelPtBr": "Pizza de Frango",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.vegetable-roll",
+      "labelPtBr": "Rolinho Vegetal",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.fruits",
+      "labelPtBr": "Frutas",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.chinese",
+      "labelPtBr": "Chinesa",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "food.hobbies",
+      "labelPtBr": "Gastronomia & Hobbies",
+      "parentSlug": "food",
+      "kind": "category"
+    },
+    {
+      "slug": "color-primary",
+      "labelPtBr": "`#99cc00`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-cod-gray",
+      "labelPtBr": "`#111`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-apple",
+      "labelPtBr": "`#43a047`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-azure-radiance",
+      "labelPtBr": "`#0089ff`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-persian-green",
+      "labelPtBr": "`#009688`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-web-orange",
+      "labelPtBr": "`#ffab00`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-ecstasy",
+      "labelPtBr": "`#f57f17`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-pomegranate",
+      "labelPtBr": "`#f4511e`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-razzmatazz",
+      "labelPtBr": "`#ed145b`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-disney-cerise",
+      "labelPtBr": "`#ec008c`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-scampi",
+      "labelPtBr": "`#605ca8`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-cutty-sark",
+      "labelPtBr": "`#546e7a`",
+      "parentSlug": null,
+      "kind": "category"
+    },
+    {
+      "slug": "color-white",
+      "labelPtBr": "`#fff`",
+      "parentSlug": null,
+      "kind": "category"
+    }
+  ]
+}

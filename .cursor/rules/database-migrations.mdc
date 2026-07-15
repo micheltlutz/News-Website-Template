@@ -1,0 +1,25 @@
+---
+description: Migrations SQL e Fluent do ml-backoffice-api
+globs: database/**/*.sql,Sources/**/Migrations/**/*.swift
+alwaysApply: false
+---
+
+# Migrations (ADR-002)
+
+## SQL (`database/migrations/`)
+
+- Nome: `NNN_descricao.sql` (ex.: `025_add_fornecedor_id_to_filamentos.sql`)
+- Cabeçalho com número, nome e descrição
+- `CREATE TABLE IF NOT EXISTS`, `ADD COLUMN IF NOT EXISTS`, `CREATE INDEX IF NOT EXISTS`
+- Aplicar manualmente: `./database/run-migrations-ml-backoffice.sh`
+- Fonte de verdade do schema principal
+
+## Fluent (`Sources/MLBackofficeAPI/Migrations/`)
+
+- Struct `AsyncMigration` com `prepare(on:)` e `revert(on:)`
+- Registrar em `configure.swift`: `app.migrations.add(NomeMigration())`
+- `autoMigrate()` no boot — só para tabelas gerenciadas pela API
+
+## Regra crítica
+
+Tabela deve existir (SQL) **antes** do Model Fluent referenciar. Ordem: SQL → Model → (opcional) Fluent migration.

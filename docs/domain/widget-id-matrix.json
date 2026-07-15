@@ -1,0 +1,2076 @@
+{
+  "version": 2,
+  "jiraEpic": "NM-1",
+  "naming": {
+    "htmlId": "{pageId}__{slotWithHyphens}",
+    "dataWidgetId": "{pageId}.{slot}",
+    "dataWidgetType": "kebab-case type from widgetTypes",
+    "notes": "Shell widgets (header/ticker/footer) are page-scoped to allow per-screen content targeting. Cards inside a widget do not get widget-ids; article entities use CMS ids separately."
+  },
+  "count": 256,
+  "primaryTableCounts": {
+    "site_settings": 75,
+    "widget_bindings": 92,
+    "social_links": 20,
+    "ad_slots": 24,
+    "categories": 4,
+    "seo_metadata": 14,
+    "tags": 8,
+    "authors": 4,
+    "articles": 6,
+    "article_tags": 3,
+    "comments": 3,
+    "media_assets": 2,
+    "privacy_policy": 1
+  },
+  "mapping": [
+    {
+      "widgetId": "home-1.header",
+      "widgetType": "site-header",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-1.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-1.hero",
+      "widgetType": "hero-mosaic",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.top-stories",
+      "widgetType": "isotope-section",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.lifestyle",
+      "widgetType": "overlay-list",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-1",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-1.sidebar.ad-1",
+      "widgetType": "ad-banner",
+      "pageId": "home-1",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-1.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-1",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.ad-after-top",
+      "widgetType": "ad-banner",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-1.video",
+      "widgetType": "video-section",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.tech-world",
+      "widgetType": "media-list",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.health-fitness",
+      "widgetType": "media-list",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.tech-world-2",
+      "widgetType": "media-list",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.ad-latest",
+      "widgetType": "ad-banner",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-1.sports",
+      "widgetType": "isotope-section",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.more-news",
+      "widgetType": "isotope-section",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-1.sidebar.ad-2",
+      "widgetType": "ad-banner",
+      "pageId": "home-1",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-1.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "home-1",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-1.categories",
+      "widgetType": "category-boxes",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "categories",
+      "notes": "Caixas de categoria (CATEGORIES.md)"
+    },
+    {
+      "widgetId": "home-1.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-2.header",
+      "widgetType": "site-header",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-2.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.hero",
+      "widgetType": "hero-mosaic",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.top-stories",
+      "widgetType": "isotope-section",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.ad-after-top",
+      "widgetType": "ad-banner",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-2.international",
+      "widgetType": "international-section",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-2",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-2.sidebar.ad-1",
+      "widgetType": "ad-banner",
+      "pageId": "home-2",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-2.editor-picks",
+      "widgetType": "news-carousel",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.fashion",
+      "widgetType": "category-news",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.tech-world",
+      "widgetType": "category-news",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.food-hobbies",
+      "widgetType": "category-news",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.ad-category",
+      "widgetType": "ad-banner",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-2.video",
+      "widgetType": "video-section",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.more-news",
+      "widgetType": "isotope-section",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "home-2",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-2.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "home-2",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-2.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-3.header",
+      "widgetType": "site-header",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-3.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.hero",
+      "widgetType": "hero-mosaic",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.whats-new",
+      "widgetType": "isotope-section",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.android",
+      "widgetType": "media-list",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.accessories",
+      "widgetType": "media-list",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-3",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-3.sidebar.ad-1",
+      "widgetType": "ad-banner",
+      "pageId": "home-3",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-3.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-3",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.ad-after-top",
+      "widgetType": "ad-banner",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-3.video",
+      "widgetType": "video-section",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.gadgets",
+      "widgetType": "card-grid",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.latest-news",
+      "widgetType": "latest-news",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "home-3",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-3.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "home-3",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-3.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-4.header",
+      "widgetType": "site-header",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-4.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.hero",
+      "widgetType": "hero-mosaic",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.popular-games",
+      "widgetType": "isotope-section",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.games-reviews",
+      "widgetType": "review-section",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-4",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-4.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-4",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.video",
+      "widgetType": "video-section",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-4.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-4",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-5.header",
+      "widgetType": "site-header",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-5.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.hero",
+      "widgetType": "hero-mosaic",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.popular-news",
+      "widgetType": "isotope-section",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.racing-world",
+      "widgetType": "overlay-list",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-5.sidebar.ad-1",
+      "widgetType": "ad-banner",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-5.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.video",
+      "widgetType": "video-section",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.latest-article",
+      "widgetType": "latest-news",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.sidebar.categories",
+      "widgetType": "category-boxes",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "categories",
+      "notes": "Caixas de categoria (CATEGORIES.md)"
+    },
+    {
+      "widgetId": "home-5.sidebar.ad-2",
+      "widgetType": "ad-banner",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-5.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "home-5",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-5.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-5",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-6.header",
+      "widgetType": "site-header",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-6.hero",
+      "widgetType": "hero-banner",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.featured",
+      "widgetType": "featured-section",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.latest-articles",
+      "widgetType": "latest-news",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-6.sidebar.ad-1",
+      "widgetType": "ad-banner",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-6.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.trending",
+      "widgetType": "trending-section",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.categories",
+      "widgetType": "category-boxes",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "categories",
+      "notes": "Caixas de categoria (CATEGORIES.md)"
+    },
+    {
+      "widgetId": "home-6.more-news",
+      "widgetType": "more-news",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-6.sidebar.ad-2",
+      "widgetType": "ad-banner",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "home-6.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "home-6",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-6.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-6",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-7.header",
+      "widgetType": "site-header",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "home-7.ticker",
+      "widgetType": "ticker",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.hero",
+      "widgetType": "hero-nivo",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.hero-side",
+      "widgetType": "media-list",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.popular-recipes",
+      "widgetType": "isotope-section",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.food-reviews",
+      "widgetType": "review-section",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "home-7",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "home-7.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "home-7",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.video",
+      "widgetType": "video-carousel",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "home-7.categories",
+      "widgetType": "category-boxes",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "categories",
+      "notes": "Caixas de categoria (CATEGORIES.md)"
+    },
+    {
+      "widgetId": "home-7.footer",
+      "widgetType": "site-footer",
+      "pageId": "home-7",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-1.header",
+      "widgetType": "site-header",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-1.ticker",
+      "widgetType": "ticker",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-1.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-1.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "post-1.list",
+      "widgetType": "media-list",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-1.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "post-1",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "post-1.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "post-1",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "post-1.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "post-1",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-1.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "post-1",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "post-1.footer",
+      "widgetType": "site-footer",
+      "pageId": "post-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-2.header",
+      "widgetType": "site-header",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-2.ticker",
+      "widgetType": "ticker",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-2.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-2.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "post-2.list",
+      "widgetType": "card-grid",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-2.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "post-2",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "post-2.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "post-2",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "post-2.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "post-2",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-2.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "post-2",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "post-2.footer",
+      "widgetType": "site-footer",
+      "pageId": "post-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-3.header",
+      "widgetType": "site-header",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-3.ticker",
+      "widgetType": "ticker",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-3.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-3.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "post-3.list",
+      "widgetType": "media-list",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-3.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "post-3",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "post-3.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "post-3",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "post-3.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "post-3",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-3.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "post-3",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-3.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "post-3",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "post-3.footer",
+      "widgetType": "site-footer",
+      "pageId": "post-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-4.header",
+      "widgetType": "site-header",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-4.ticker",
+      "widgetType": "ticker",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-4.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-4.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "post-4.list",
+      "widgetType": "overlay-list",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-4.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "post-4",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "post-4.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "post-4",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "post-4.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "post-4",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "post-4.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "post-4",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "post-4.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "post-4",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "post-4.footer",
+      "widgetType": "site-footer",
+      "pageId": "post-4",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "archive.header",
+      "widgetType": "site-header",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "archive.ticker",
+      "widgetType": "ticker",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "archive.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "archive.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "archive.filters",
+      "widgetType": "archive-filters",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "archive.list",
+      "widgetType": "media-list",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "archive.sidebar.archives",
+      "widgetType": "archive-filters",
+      "pageId": "archive",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "archive.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "archive",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "archive.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "archive",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "archive.footer",
+      "widgetType": "site-footer",
+      "pageId": "archive",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "author.header",
+      "widgetType": "site-header",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "author.ticker",
+      "widgetType": "ticker",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "author.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "author.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "author.profile",
+      "widgetType": "article-author",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "authors",
+      "notes": "Perfil do autor"
+    },
+    {
+      "widgetId": "author.list",
+      "widgetType": "media-list",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "author.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "author",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "author.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "author",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "author.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "author",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "author.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "author",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "author.footer",
+      "widgetType": "site-footer",
+      "pageId": "author",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-1.header",
+      "widgetType": "site-header",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-1.ticker",
+      "widgetType": "ticker",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-1.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-1.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "article-1.body",
+      "widgetType": "article-body",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-1.tags",
+      "widgetType": "article-tags",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "article_tags",
+      "notes": "Tags do artigo corrente"
+    },
+    {
+      "widgetId": "article-1.share",
+      "widgetType": "article-share",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-1.nav",
+      "widgetType": "article-nav",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-1.author",
+      "widgetType": "article-author",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "authors",
+      "notes": "Perfil do autor"
+    },
+    {
+      "widgetId": "article-1.comments",
+      "widgetType": "article-comments",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "comments",
+      "notes": "Lista e formulário de comentários"
+    },
+    {
+      "widgetId": "article-1.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-1.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "article-1.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-1.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-1.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "article-1.sidebar.reviews",
+      "widgetType": "sidebar-reviews",
+      "pageId": "article-1",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-1.footer",
+      "widgetType": "site-footer",
+      "pageId": "article-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-2.header",
+      "widgetType": "site-header",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-2.ticker",
+      "widgetType": "ticker",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-2.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-2.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "article-2.hero",
+      "widgetType": "hero-banner",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-2.body",
+      "widgetType": "article-body",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-2.tags",
+      "widgetType": "article-tags",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "article_tags",
+      "notes": "Tags do artigo corrente"
+    },
+    {
+      "widgetId": "article-2.share",
+      "widgetType": "article-share",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-2.nav",
+      "widgetType": "article-nav",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-2.author",
+      "widgetType": "article-author",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "authors",
+      "notes": "Perfil do autor"
+    },
+    {
+      "widgetId": "article-2.related",
+      "widgetType": "related-carousel",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-2.comments",
+      "widgetType": "article-comments",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "comments",
+      "notes": "Lista e formulário de comentários"
+    },
+    {
+      "widgetId": "article-2.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "article-2",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-2.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "article-2",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "article-2.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "article-2",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-2.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "article-2",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-2.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "article-2",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "article-2.footer",
+      "widgetType": "site-footer",
+      "pageId": "article-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-3.header",
+      "widgetType": "site-header",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-3.ticker",
+      "widgetType": "ticker",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-3.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-3.hero",
+      "widgetType": "hero-banner",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-3.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "article-3.body",
+      "widgetType": "article-body",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-3.tags",
+      "widgetType": "article-tags",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "article_tags",
+      "notes": "Tags do artigo corrente"
+    },
+    {
+      "widgetId": "article-3.share",
+      "widgetType": "article-share",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-3.nav",
+      "widgetType": "article-nav",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "articles",
+      "notes": "Campos / navegação do artigo"
+    },
+    {
+      "widgetId": "article-3.author",
+      "widgetType": "article-author",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "authors",
+      "notes": "Perfil do autor"
+    },
+    {
+      "widgetId": "article-3.comments",
+      "widgetType": "article-comments",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "comments",
+      "notes": "Lista e formulário de comentários"
+    },
+    {
+      "widgetId": "article-3.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "article-3",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "article-3.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "article-3",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "article-3.sidebar.recent",
+      "widgetType": "sidebar-recent",
+      "pageId": "article-3",
+      "region": "sidebar",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "article-3.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "article-3",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "article-3.sidebar.tags",
+      "widgetType": "sidebar-tags",
+      "pageId": "article-3",
+      "region": "sidebar",
+      "primaryTable": "tags",
+      "notes": "Nuvem de tags (frequência / uso)"
+    },
+    {
+      "widgetId": "article-3.footer",
+      "widgetType": "site-footer",
+      "pageId": "article-3",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-1.header",
+      "widgetType": "site-header",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-1.ticker",
+      "widgetType": "ticker",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "gallery-1.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-1.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "gallery-1.grid",
+      "widgetType": "gallery-grid",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "media_assets",
+      "notes": "Mídia da galeria"
+    },
+    {
+      "widgetId": "gallery-1.footer",
+      "widgetType": "site-footer",
+      "pageId": "gallery-1",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-2.header",
+      "widgetType": "site-header",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-2.ticker",
+      "widgetType": "ticker",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "gallery-2.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "gallery-2.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "gallery-2.grid",
+      "widgetType": "gallery-grid",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "media_assets",
+      "notes": "Mídia da galeria"
+    },
+    {
+      "widgetId": "gallery-2.footer",
+      "widgetType": "site-footer",
+      "pageId": "gallery-2",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.header",
+      "widgetType": "site-header",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.ticker",
+      "widgetType": "ticker",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "contact.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "contact.about",
+      "widgetType": "featured-section",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "contact.location",
+      "widgetType": "meta-bar",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.form",
+      "widgetType": "contact-form",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "contact",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "contact.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "contact",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "contact.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "contact",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "contact.footer",
+      "widgetType": "site-footer",
+      "pageId": "contact",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "privacy.header",
+      "widgetType": "site-header",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "privacy.ticker",
+      "widgetType": "ticker",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "privacy.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "privacy.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "privacy.body",
+      "widgetType": "article-body",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "privacy_policy",
+      "notes": "Conteúdo da política + versão CMP"
+    },
+    {
+      "widgetId": "privacy.sidebar.social",
+      "widgetType": "sidebar-social",
+      "pageId": "privacy",
+      "region": "sidebar",
+      "primaryTable": "social_links",
+      "notes": "Links e contagens de redes"
+    },
+    {
+      "widgetId": "privacy.sidebar.ad",
+      "widgetType": "ad-banner",
+      "pageId": "privacy",
+      "region": "sidebar",
+      "primaryTable": "ad_slots",
+      "notes": "Creatives em ad_creatives; gated por Consent Mode"
+    },
+    {
+      "widgetId": "privacy.sidebar.newsletter",
+      "widgetType": "sidebar-newsletter",
+      "pageId": "privacy",
+      "region": "sidebar",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "privacy.footer",
+      "widgetType": "site-footer",
+      "pageId": "privacy",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "error-404.header",
+      "widgetType": "site-header",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "error-404.ticker",
+      "widgetType": "ticker",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "widget_bindings",
+      "notes": "Curadoria via widget_bindings + widget_binding_articles"
+    },
+    {
+      "widgetId": "error-404.meta-bar",
+      "widgetType": "meta-bar",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "error-404.breadcrumbs",
+      "widgetType": "breadcrumbs",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "seo_metadata",
+      "notes": "SEO / breadcrumbs da página"
+    },
+    {
+      "widgetId": "error-404.message",
+      "widgetType": "error-message",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    },
+    {
+      "widgetId": "error-404.footer",
+      "widgetType": "site-footer",
+      "pageId": "error-404",
+      "region": "main",
+      "primaryTable": "site_settings",
+      "notes": "Config global do site / chrome"
+    }
+  ]
+}

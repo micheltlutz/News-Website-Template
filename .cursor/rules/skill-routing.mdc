@@ -1,0 +1,21 @@
+---
+description: Roteamento para skills do projeto (ler SKILL.md antes de implementar)
+alwaysApply: true
+---
+
+# Skill Routing
+
+Carregue a skill lendo o arquivo indicado **antes** de implementar:
+
+| Cenário | Arquivo |
+|---------|---------|
+| Endpoint, controller, Fluent, auth | `skills/server-side-swift/AGENTS.md` ou `SKILL.md` |
+| Padrões deste repo | `skills/server-side-swift/ml-backoffice-patterns.md` |
+| Docker, CI, GitHub Actions, deploy | `skills/swift-server-ci/AGENTS.md` ou `SKILL.md` |
+| App iOS/macOS, TestFlight | `skills/xcode-cloud/AGENTS.md` ou `SKILL.md` |
+| Routing, middleware Vapor | `skills/server-side-swift/vapor-patterns.md` |
+| Fluent queries, relations | `skills/server-side-swift/database-patterns.md` |
+
+**Este repo é SPM puro** — CI/deploy → `swift-server-ci`, **não** `xcode-cloud`.
+
+Skills em `.cursor/skills/` e `.claude/skills/` (cópias de `skills/`). Ver `AGENTS.md` na raiz.

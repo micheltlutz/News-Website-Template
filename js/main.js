@@ -37,10 +37,10 @@
   var n = e(".popup-youtube");
   function o() {
     var a = e("body").find(">#wrapper"),
-      t = e("#side-menu-trigger a.menu-times");
+      t = e("#side-menu-trigger .menu-times");
     a.removeClass("open").find(".offcanvas-mask").remove(),
       e("#offcanvas-body-wrapper").attr("style", ""),
-      t.prev(".menu-bar").removeClass("open"),
+      t.prev(".menu-bar").removeClass("open").attr("aria-expanded", "false"),
       t.addClass("close");
   }
   n.length &&
@@ -61,21 +61,26 @@
         });
       }),
     e(document).on("click", "#top-search-form .search-button", function (a) {
-      return (
-        a.preventDefault(),
-        e(this)
-          .prev("input.search-input")
-          .animate(
-            {
-              width: ["toggle", "swing"],
-              height: ["toggle", "swing"],
-              opacity: "toggle",
-            },
-            500,
-            "linear"
-          ),
-        !1
+      a.preventDefault();
+      var btn = e(this);
+      var input = btn.siblings("input.search-input");
+      if (!input.length) input = btn.prevAll("input.search-input").first();
+      input.animate(
+        {
+          width: ["toggle", "swing"],
+          height: ["toggle", "swing"],
+          opacity: "toggle",
+        },
+        500,
+        "linear",
+        function () {
+          var open = input.is(":visible");
+          btn.attr("aria-expanded", open ? "true" : "false");
+          btn.attr("aria-label", open ? "Fechar busca" : "Abrir busca");
+          if (open) input.focus();
+        }
       );
+      return !1;
     }),
     e(".loadmore").on("click", "a", function (a) {
       a.preventDefault();
@@ -97,7 +102,9 @@
     }),
     e("nav#dropdown").meanmenu({
       siteLogo:
-        "<div class='mobile-menu-nav-back'><a href='index.html' class='logo-mobile'><img src='img/logo.png'/></a></div>",
+        "<div class='mobile-menu-nav-back'>" +
+        "<a href='index.html' class='logo-mobile'><img src='img/logo.png' alt='Notícias Mobile'/></a>" +
+        "</div>",
     }),
     new WOW().init(),
     e.scrollUp({
@@ -106,31 +113,31 @@
       scrollSpeed: 900,
       animation: "fade",
     }),
-    e("#wrapper").on("click", "#side-menu-trigger a.menu-bar", function (a) {
+    e("#wrapper").on("click", "#side-menu-trigger .menu-bar", function (a) {
       a.preventDefault();
       var t = e(this),
         n = e(this).parents("body").find(">#wrapper"),
         o = e("<div />").addClass("offcanvas-mask");
       return (
         n.addClass("open").append(o),
-        t.addClass("open"),
+        t.addClass("open").attr("aria-expanded", "true"),
         t.next(".menu-times").removeClass("close"),
         (document.getElementById("offcanvas-body-wrapper").style.right = "0"),
         !1
       );
     }),
-    e("#wrapper").on("click", "#side-menu-trigger a.menu-times", function (a) {
+    e("#wrapper").on("click", "#side-menu-trigger .menu-times", function (a) {
       a.preventDefault();
       var t = e(this);
       return (
         e("#offcanvas-body-wrapper").attr("style", ""),
-        t.prev(".menu-bar").removeClass("open"),
+        t.prev(".menu-bar").removeClass("open").attr("aria-expanded", "false"),
         t.addClass("close"),
         o(),
         !1
       );
     }),
-    e("#wrapper").on("click", "#offcanvas-nav-close a", function (e) {
+    e("#wrapper").on("click", "#offcanvas-nav-close .menu-times, #offcanvas-nav-close a", function (e) {
       return o(), !1;
     }),
     e(document).on("click", "#wrapper.open .offcanvas-mask", function () {
@@ -360,8 +367,8 @@
         dots: !!l,
         nav: !!d,
         navText: [
-          '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-          '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+          '<i class="fa fa-angle-left" aria-hidden="true"></i><span class="visuallyhidden">Anterior</span>',
+          '<i class="fa fa-angle-right" aria-hidden="true"></i><span class="visuallyhidden">Próximo</span>',
         ],
         navSpeed: !!p,
         center: !!S,
@@ -412,4 +419,50 @@
       itemSelector: ".masonry-item",
       columnWidth: ".masonry-item",
     });
+
+  // A11y: Owl nav labels, reduced motion, ticker pause
+  e(".owl-carousel").each(function () {
+    var $c = e(this);
+    $c.find(".owl-prev").attr("aria-label", "Slide anterior");
+    $c.find(".owl-next").attr("aria-label", "Proximo slide");
+  });
+  e(document).on("translated.owl.carousel initialized.owl.carousel", ".owl-carousel", function () {
+    var $c = e(this);
+    $c.find(".owl-prev").attr("aria-label", "Slide anterior");
+    $c.find(".owl-next").attr("aria-label", "Proximo slide");
+  });
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) {
+    e(".owl-carousel").trigger("stop.owl.autoplay");
+    e(".ne-ticker-pause").each(function () {
+      e(this).attr({"aria-pressed": "true", "aria-label": "Continuar destaques"});
+      e(this).find("i").removeClass("fa-pause").addClass("fa-play");
+      e(this).find(".visuallyhidden").text("Continuar");
+    });
+  }
+
+  e(document).on("click", ".ne-ticker-pause", function () {
+    var btn = e(this);
+    var pressed = btn.attr("aria-pressed") === "true";
+    var playPause = e('[id^="play-pause-"]');
+    if (playPause.length) {
+      playPause.trigger("click");
+    } else {
+      // fallback: toggle CSS animation / hide swipe
+      e('[id^="ticker-wrapper-"]').toggleClass("ne-ticker-paused", !pressed);
+    }
+    btn.attr("aria-pressed", pressed ? "false" : "true");
+    btn.attr("aria-label", pressed ? "Pausar destaques" : "Continuar destaques");
+    btn.find("i").toggleClass("fa-pause", pressed).toggleClass("fa-play", !pressed);
+    var sr = btn.find(".visuallyhidden");
+    if (sr.length) sr.text(pressed ? "Pausar" : "Continuar");
+  });
+
+  if (reduceMotion) {
+    try {
+      e('[id^="play-pause-"]').trigger("click");
+    } catch (err) {}
+  }
+
 })(jQuery);

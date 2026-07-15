@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "privacy.html + js/consent.js POLICY_VERSION",
+  "privacyPolicies": [
+    {
+      "version": "2026-07-14",
+      "title": "Política de Privacidade",
+      "effectiveAt": "2026-07-14",
+      "cmpEnabled": true,
+      "policyStorageKey": "noticiasmobile-consent",
+      "isCurrent": true,
+      "pageId": "privacy",
+      "widgetId": "privacy.body",
+      "sourceFile": "privacy.html",
+      "notes": "Corpo HTML hidratado a partir do artigo ne-privacy-page; versão deve bater com consent.js"
+    }
+  ]
+}

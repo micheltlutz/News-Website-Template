@@ -1,0 +1,39 @@
+---
+description: Padrões Vapor para arquivos Swift do ml-backoffice-api
+globs: Sources/**/*.swift
+alwaysApply: false
+---
+
+# Padrões Swift / Vapor
+
+## Controller
+
+- `RouteCollection`, `boot(routes:)` com `routes.grouped("api", "<recurso>")`
+- Handlers `@Sendable async throws`
+- Decode DTO → repository/service → retorna DTO ou `HTTPStatus`
+- Validar UUID: `req.parameters.get("id", as: UUID.self)` ou `Abort(.badRequest)`
+- Erros: `Abort(.notFound)`, `Abort(.conflict)`, `Abort(.badRequest, reason:)`
+
+## DTO (`DTOs/`)
+
+- Struct `Content`, propriedades **camelCase**
+- `toDTO()` e `toModel()` no mesmo arquivo do DTO
+
+## Model (`Infrastructure/Database/Models/`)
+
+- `static let schema`, colunas **snake_case** via `@Field(key:)`
+- Não criar models em `Models/Todo.swift` (legado)
+
+## Repository (`Infrastructure/Database/Repositories/`)
+
+- Protocol `Sendable` + `DatabaseXxxRepository`
+- Encapsular `Model.query(on:)`, `.save(on:)`
+
+## Services
+
+- Lógica complexa: `Application/Services/` (ex.: `ProdutoService`)
+- Cálculos puros: `Services/` (ex.: `OrcamentoPricingService`)
+
+## Registro de rotas
+
+Rotas mais específicas **antes** em `routes.swift` (ex.: `ProdutoAcessorioController` antes de `ProdutoController`).

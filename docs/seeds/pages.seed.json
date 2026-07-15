@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "source": "screen-map.json",
+  "pages": [
+    {
+      "pageId": "home-1",
+      "file": "index.html",
+      "title": "Home 1",
+      "aliases": [
+        "index-2.html"
+      ],
+      "isActiveHome": true,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-2",
+      "file": "index2.html",
+      "title": "Home 2",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-3",
+      "file": "index3.html",
+      "title": "Home 3",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-4",
+      "file": "index4.html",
+      "title": "Home 4",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-5",
+      "file": "index5.html",
+      "title": "Home 5",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-6",
+      "file": "index6.html",
+      "title": "Home 6",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "home-7",
+      "file": "index7.html",
+      "title": "Home 7",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "home"
+    },
+    {
+      "pageId": "post-1",
+      "file": "post-style-1.html",
+      "title": "Post Style 1",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "post-2",
+      "file": "post-style-2.html",
+      "title": "Post Style 2",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "post-3",
+      "file": "post-style-3.html",
+      "title": "Post Style 3",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "post-4",
+      "file": "post-style-4.html",
+      "title": "Post Style 4",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "archive",
+      "file": "archive.html",
+      "title": "Archive",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "author",
+      "file": "author-post.html",
+      "title": "Author Post",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "listing"
+    },
+    {
+      "pageId": "article-1",
+      "file": "single-news-1.html",
+      "title": "News Details 1",
+      "aliases": [
+        "single-news-4.html"
+      ],
+      "isActiveHome": false,
+      "pageKind": "article"
+    },
+    {
+      "pageId": "article-2",
+      "file": "single-news-2.html",
+      "title": "News Details 2",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "article"
+    },
+    {
+      "pageId": "article-3",
+      "file": "single-news-3.html",
+      "title": "News Details 3",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "article"
+    },
+    {
+      "pageId": "gallery-1",
+      "file": "gallery-style-1.html",
+      "title": "Gallery Style 1",
+      "aliases": [
+        "gallery-style1.html"
+      ],
+      "isActiveHome": false,
+      "pageKind": "gallery"
+    },
+    {
+      "pageId": "gallery-2",
+      "file": "gallery-style-2.html",
+      "title": "Gallery Style 2",
+      "aliases": [
+        "gallery-style2.html"
+      ],
+      "isActiveHome": false,
+      "pageKind": "gallery"
+    },
+    {
+      "pageId": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "system"
+    },
+    {
+      "pageId": "privacy",
+      "file": "privacy.html",
+      "title": "Política de Privacidade",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "system"
+    },
+    {
+      "pageId": "error-404",
+      "file": "404.html",
+      "title": "404 Error",
+      "aliases": [],
+      "isActiveHome": false,
+      "pageKind": "system"
+    }
+  ]
+}

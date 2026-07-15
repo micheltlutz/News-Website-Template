@@ -1,0 +1,61 @@
+---
+alwaysApply: true
+description: JIRA Project Configuration
+---
+
+# JIRA Project Configuration
+
+This workspace uses the following Jira configuration:
+
+- **PROJECT_KEY:** "NM"
+- **PROJECT_NAME:** "NM"
+<!-- - **PROJECT_ID:** "10023" -->
+- **CLOUD_ID:** e8d2b1d4-9b6d-4bb5-992a-8838628968cb
+- **BASE_URL:** "https://mlcreativehub.atlassian.net/"
+- **BROWSE_URL_TEMPLATE:** "https://mlcreativehub.atlassian.net/browse/{issue_id}"
+- **BOARD_URL:** "https://mlcreativehub.atlassian.net/jira/software/projects/MLHUB/boards/4"
+
+> **Origem do `CLOUD_ID`:** com sessão Atlassian aberta, abra
+> `https://mlcreativehub.atlassian.net/_edge/tenant_info` e use o UUID do tenant
+> (campo `cloudId`). Em outro site: `https://seu-dominio.atlassian.net/_edge/tenant_info`.
+
+## Issue Types (nomes literais no Jira)
+
+| Conceito | Nome no Jira | ID | Uso |
+|----------|--------------|-----|-----|
+| Épico | **Epic** | 10006 | hierarchyLevel 1 — usar `issueTypeName: "Epic"` |
+| Story | **História** | 10009 | vincular ao pai via `parent: "MLHUB-XX"` |
+| Task | **Tarefa** | 10008 | tarefas avulsas |
+| Sub-task | **Subtask** | 10007 | vincular via `parent: "MLHUB-XX"` |
+| Feature | **Função** | 10010 | funcionalidade / feature |
+| Bug | **Bug** | 10011 | bugs |
+
+## Workflow do board MLHUB (Status)
+
+Colunas do board, da esquerda para a direita (nomes literais das transitions):
+
+| Ordem | Status no board (nome literal) | statusCategory (JQL) | Uso |
+|-------|--------------------------------|----------------------|-----|
+| 1 | `BACKLOG` | `"To Do"` | Backlog |
+| 2 | `A fazer` | `"To Do"` | Pronto para iniciar |
+| 3 | `Fazendo` | `"In Progress"` | Em execução |
+| 4 | `Em análise` | `"In Progress"` | Review / análise |
+| 5 | `Feito` | `Done` | Concluído |
+
+Em JQL:
+
+- Preferir **`statusCategory`** para filtros amplos (locale-independent).
+- Usar **`status = "Fazendo"`** (etc.) só quando a coluna exata importar — o casing deve bater com o nome literal do board.
+
+Exemplos:
+
+```jql
+project = MLHUB AND status = "A fazer"
+project = MLHUB AND statusCategory = "In Progress"
+project = MLHUB AND status = "Feito"
+project = MLHUB AND statusCategory = Done
+project = MLHUB AND type = Epic AND statusCategory != Done
+```
+
+`statusCategory = "In Progress"` cobre **Fazendo** e **Em análise**.
+`statusCategory = "To Do"` cobre **BACKLOG** e **A fazer**.

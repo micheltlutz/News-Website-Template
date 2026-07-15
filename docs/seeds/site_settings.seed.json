@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "source": "template brand / STYLE-GUIDE / privacy.html",
+  "settings": [
+    {
+      "key": "brand.name",
+      "valueJson": "Notícias Mobile",
+      "description": "Nome do portal (header, footer, OG site_name)"
+    },
+    {
+      "key": "brand.logoUrl",
+      "valueJson": "/img/logo.png",
+      "description": "Logo claro"
+    },
+    {
+      "key": "brand.logoDarkUrl",
+      "valueJson": "/img/logo-dark.png",
+      "description": "Logo para superfícies escuras"
+    },
+    {
+      "key": "brand.faviconUrl",
+      "valueJson": "/img/favicon.png",
+      "description": "Favicon / apple-touch-icon"
+    },
+    {
+      "key": "brand.themeColor",
+      "valueJson": "#99cc00",
+      "description": "meta theme-color / --color-primary"
+    },
+    {
+      "key": "site.baseUrl",
+      "valueJson": "https://www.noticiasmobile.com.br",
+      "description": "URL canônica base (SEO, JSON-LD)"
+    },
+    {
+      "key": "site.locale",
+      "valueJson": "pt-BR",
+      "description": "Idioma padrão"
+    },
+    {
+      "key": "site.defaultHomePageId",
+      "valueJson": "home-1",
+      "description": "pageId ativo como home"
+    },
+    {
+      "key": "theme.default",
+      "valueJson": "system",
+      "description": "Preferência inicial: system | light | dark (theme.js)"
+    },
+    {
+      "key": "theme.storageKey",
+      "valueJson": "noticiasmobile-theme",
+      "description": "localStorage key do tema"
+    },
+    {
+      "key": "cmp.enabled",
+      "valueJson": true,
+      "description": "Exibir banner CMP"
+    },
+    {
+      "key": "cmp.storageKey",
+      "valueJson": "noticiasmobile-consent",
+      "description": "localStorage key do consentimento"
+    },
+    {
+      "key": "cmp.privacyUrl",
+      "valueJson": "/privacy.html",
+      "description": "Link da política no CMP"
+    },
+    {
+      "key": "meta.locationLabel",
+      "valueJson": "São Paulo, Brasil",
+      "description": "Texto tipico da meta-bar"
+    },
+    {
+      "key": "contact.email",
+      "valueJson": "privacidade@noticiasmobile.com.br",
+      "description": "Contato LGPD / formulário"
+    }
+  ]
+}
