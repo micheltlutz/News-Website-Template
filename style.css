@@ -9,3 +9,108 @@
   cursor:pointer;
   padding:0
 }
+
+/* ========== Notícias Mobile — A11y ========== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible{
+  outline:2px solid var(--color-primary);
+  outline-offset:2px
+}
+.skip-link{
+  z-index:10000;
+  background:var(--color-primary);
+  color:#fff;
+  padding:12px 16px;
+  font-weight:600;
+  text-decoration:none
+}
+.skip-link:focus,
+.skip-link:focus-visible{
+  position:fixed!important;
+  top:12px;
+  left:12px;
+  clip:auto!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  overflow:visible!important;
+  outline:2px solid #fff;
+  outline-offset:2px
+}
+.breadcrumbs-area .breadcrumbs-content .breadcrumbs-heading,
+.breadcrumbs-area2 .breadcrumbs-content .breadcrumbs-heading{
+  color:#fff;
+  font-size:28px;
+  font-family:Roboto,sans-serif;
+  font-weight:700;
+  margin:0 0 10px;
+  text-transform:capitalize
+}
+.breadcrumbs-area2 .breadcrumbs-content .breadcrumbs-heading{color:#111}
+/* Pause/play à direita do feed — evita sobreposição com a nav sticky */
+[class*="col-"]:has(> .ne-ticker-controls){
+  display:flex!important;
+  align-items:center;
+  gap:10px;
+  min-width:0
+}
+[class*="col-"]:has(> .ne-ticker-controls) > [class*="feeding-text"]{
+  order:1;
+  flex:1 1 auto;
+  min-width:0
+}
+.ne-ticker-controls{
+  order:2;
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  position:relative;
+  z-index:2
+}
+.ne-ticker-pause{
+  border:0;
+  background:var(--color-surface-2,rgba(255,255,255,.08));
+  color:var(--color-heading,#fff);
+  cursor:pointer;
+  padding:8px 10px;
+  line-height:1;
+  border-radius:4px;
+  min-width:36px;
+  min-height:36px
+}
+.ne-ticker-pause:hover,
+.ne-ticker-pause:focus-visible{
+  color:var(--color-primary);
+  outline:2px solid var(--color-primary);
+  outline-offset:2px
+}
+.ne-ticker-paused [id^="ticker-"],
+.ne-ticker-paused [id^="ticker-swipe-"]{
+  animation:none!important
+}
+/* Controles nativos do plugin ficam no DOM (API), mas ocultos — nosso botão dispara o clique */
+.ticker-controls,
+[id^="ticker-controls-"]{
+  display:none!important
+}
+.offcanvas-body-wrapper .offcanvas-nav-close .menu-times{
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  padding:0
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important
+  }
+}
+

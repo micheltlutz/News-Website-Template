@@ -32,6 +32,7 @@
         <link rel="stylesheet" href="css/hover-min.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/consent.css">
         <!-- For IE -->
         <link rel="stylesheet" type="text/css" href="css/ie-only.css" />
         <!-- Modernizr Js -->
@@ -207,6 +208,7 @@
                             <div class="topic-box mt-4 mb-5">Top Stories</div>
                         </div>
                         <div class="col-lg-10 col-md-9 col-sm-8 col-7">
+                            <div class="ne-ticker-controls"><button type="button" class="ne-ticker-pause" aria-label="Pausar destaques" aria-pressed="false"><i class="fa fa-pause" aria-hidden="true"></i><span class="visuallyhidden">Pausar</span></button></div>
                             <div class="feeding-text-dark">
                                 <ol id="sample" class="ticker">
                                     <li>
@@ -1047,6 +1049,35 @@
         <script src="js/ticker.js" type="text/javascript"></script>
         <!-- Custom Js -->
         <script src="js/main.js" type="text/javascript"></script>
-    </body>
+        <script src="js/consent.js"></script>
+    <div id="noticiasmobile-cmp-banner" class="ne-cmp-banner" role="dialog" aria-modal="true" aria-labelledby="ne-cmp-title" aria-describedby="ne-cmp-desc">
+            <div class="ne-cmp-inner">
+                <div class="ne-cmp-copy">
+                    <h2 id="ne-cmp-title">Preferências de cookies e privacidade</h2>
+                    <p id="ne-cmp-desc">Usamos cookies essenciais e, com seu consentimento, cookies de analytics e publicidade. Você pode aceitar tudo, manter apenas o básico ou recusar cookies não essenciais. Consulte a <a href="privacy.html">Política de Privacidade</a>.</p>
+                </div>
+                <div class="ne-cmp-actions">
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-ghost" data-cmp-action="open-preferences">Gerenciar preferências</button>
+                    <button type="button" class="ne-cmp-btn" data-cmp-action="deny">Recusar</button>
+                    <button type="button" class="ne-cmp-btn" data-cmp-action="accept-basic">Básico</button>
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-primary" data-cmp-action="accept-all">Aceitar tudo</button>
+                </div>
+            </div>
+        </div>
+        <div id="noticiasmobile-cmp-modal" class="ne-cmp-modal" role="dialog" aria-modal="true" aria-labelledby="ne-cmp-modal-title" hidden>
+            <div class="ne-cmp-dialog">
+                <h2 id="ne-cmp-modal-title">Gerenciar preferências</h2>
+                <fieldset>
+                    <label><input type="checkbox" checked disabled> <span>Essenciais <small>Necessários para segurança, tema e lembrar sua escolha.</small></span></label>
+                    <label><input type="checkbox" name="cmp-analytics"> <span>Analytics <small>Google Analytics (GA4) para medir audiência.</small></span></label>
+                    <label><input type="checkbox" name="cmp-advertising"> <span>Publicidade <small>Google Ads / banners personalizados.</small></span></label>
+                    <label><input type="checkbox" name="cmp-personalization"> <span>Preferências <small>Personalização leve de experiência (ex.: tema).</small></span></label>
+                </fieldset>
+                <div class="ne-cmp-dialog-actions">
+                    <button type="button" class="ne-cmp-btn ne-cmp-close" data-cmp-action="close-preferences">Fechar</button>
+                    <button type="button" class="ne-cmp-btn ne-cmp-btn-primary" data-cmp-action="save-preferences">Salvar preferências</button>
+                </div>
+            </div>
+</body>
 
 </html>
