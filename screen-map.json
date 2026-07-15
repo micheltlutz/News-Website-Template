@@ -1,0 +1,1947 @@
+{
+  "version": 1,
+  "naming": {
+    "htmlId": "{pageId}__{slotWithHyphens}",
+    "dataWidgetId": "{pageId}.{slot}",
+    "dataWidgetType": "kebab-case type from widgetTypes",
+    "notes": "Shell widgets (header/ticker/footer) are page-scoped to allow per-screen content targeting. Cards inside a widget do not get widget-ids; article entities use CMS ids separately."
+  },
+  "widgetTypes": [
+    {
+      "type": "site-header",
+      "description": "Cabeçalho do site (logo, menu, busca)"
+    },
+    {
+      "type": "ticker",
+      "description": "Feed/ticker de notícias no topo"
+    },
+    {
+      "type": "meta-bar",
+      "description": "Barra de info (local, data, clima) ou info de localização"
+    },
+    {
+      "type": "breadcrumbs",
+      "description": "Trilha de navegação"
+    },
+    {
+      "type": "hero-mosaic",
+      "description": "Hero mosaico com overlay de destaques"
+    },
+    {
+      "type": "hero-banner",
+      "description": "Hero/banner full-width ou banner interno"
+    },
+    {
+      "type": "hero-nivo",
+      "description": "Slider Nivo (home-7)"
+    },
+    {
+      "type": "isotope-section",
+      "description": "Seção com filtros Isotope (Top/Popular/More Stories)"
+    },
+    {
+      "type": "media-list",
+      "description": "Lista horizontal .media (thumb + texto)"
+    },
+    {
+      "type": "card-grid",
+      "description": "Grid de cards de notícias"
+    },
+    {
+      "type": "overlay-list",
+      "description": "Lista/grid com overlay de imagem"
+    },
+    {
+      "type": "video-section",
+      "description": "Bloco de vídeos"
+    },
+    {
+      "type": "video-carousel",
+      "description": "Carrossel de vídeos"
+    },
+    {
+      "type": "category-boxes",
+      "description": "Caixas de categoria (.category-box-layout1)"
+    },
+    {
+      "type": "category-news",
+      "description": "Coluna de notícias por categoria"
+    },
+    {
+      "type": "news-carousel",
+      "description": "Carrossel Owl (.ne-carousel)"
+    },
+    {
+      "type": "featured-section",
+      "description": "Seção de destaques / feature / about"
+    },
+    {
+      "type": "trending-section",
+      "description": "Posts em alta (trending)"
+    },
+    {
+      "type": "international-section",
+      "description": "Bloco International Story"
+    },
+    {
+      "type": "more-news",
+      "description": "Bloco More News (sem isotope)"
+    },
+    {
+      "type": "latest-news",
+      "description": "Bloco Latest News / Latest Articles"
+    },
+    {
+      "type": "review-section",
+      "description": "Reviews (games/food)"
+    },
+    {
+      "type": "ad-banner",
+      "description": "Banner publicitário (.ne-banner-layout*)"
+    },
+    {
+      "type": "sidebar-social",
+      "description": "Stay Connected / redes sociais"
+    },
+    {
+      "type": "sidebar-recent",
+      "description": "Recent / Popular tabs na sidebar"
+    },
+    {
+      "type": "sidebar-newsletter",
+      "description": "Newsletter"
+    },
+    {
+      "type": "sidebar-tags",
+      "description": "Nuvem de tags"
+    },
+    {
+      "type": "sidebar-reviews",
+      "description": "Most/Latest Reviews"
+    },
+    {
+      "type": "article-body",
+      "description": "Corpo do artigo"
+    },
+    {
+      "type": "article-tags",
+      "description": "Tags do artigo"
+    },
+    {
+      "type": "article-share",
+      "description": "Compartilhar post"
+    },
+    {
+      "type": "article-nav",
+      "description": "Navegação anterior/próximo artigo"
+    },
+    {
+      "type": "article-author",
+      "description": "Box do autor / perfil"
+    },
+    {
+      "type": "article-comments",
+      "description": "Comentários e formulário"
+    },
+    {
+      "type": "related-carousel",
+      "description": "Posts relacionados em carrossel"
+    },
+    {
+      "type": "archive-filters",
+      "description": "Filtros de arquivo"
+    },
+    {
+      "type": "gallery-grid",
+      "description": "Grade de galeria"
+    },
+    {
+      "type": "contact-form",
+      "description": "Formulário de contato"
+    },
+    {
+      "type": "error-message",
+      "description": "Mensagem de erro 404"
+    },
+    {
+      "type": "site-footer",
+      "description": "Rodapé do site"
+    }
+  ],
+  "pages": [
+    {
+      "pageId": "home-1",
+      "file": "index.html",
+      "title": "Home 1",
+      "aliases": [
+        "index-2.html"
+      ],
+      "widgets": [
+        {
+          "id": "home-1.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-1.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-1.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "home-1.hero",
+          "type": "hero-mosaic",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-1.top-stories",
+          "type": "isotope-section",
+          "label": "Destaques",
+          "region": "main"
+        },
+        {
+          "id": "home-1.lifestyle",
+          "type": "overlay-list",
+          "label": "Lifestyle",
+          "region": "main"
+        },
+        {
+          "id": "home-1.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-1.sidebar.ad-1",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-1.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-1.ad-after-top",
+          "type": "ad-banner",
+          "label": "Banner Após Destaques",
+          "region": "main"
+        },
+        {
+          "id": "home-1.video",
+          "type": "video-section",
+          "label": "Área de Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-1.tech-world",
+          "type": "media-list",
+          "label": "Mundo Tech",
+          "region": "main"
+        },
+        {
+          "id": "home-1.health-fitness",
+          "type": "media-list",
+          "label": "Saúde & Fitness",
+          "region": "main"
+        },
+        {
+          "id": "home-1.tech-world-2",
+          "type": "media-list",
+          "label": "Mundo Tech (2)",
+          "region": "main"
+        },
+        {
+          "id": "home-1.ad-latest",
+          "type": "ad-banner",
+          "label": "Banner Últimas Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-1.sports",
+          "type": "isotope-section",
+          "label": "Esportes",
+          "region": "main"
+        },
+        {
+          "id": "home-1.more-news",
+          "type": "isotope-section",
+          "label": "Mais Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-1.sidebar.ad-2",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar (2)",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-1.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-1.categories",
+          "type": "category-boxes",
+          "label": "Área de Categorias",
+          "region": "main"
+        },
+        {
+          "id": "home-1.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-2",
+      "file": "index2.html",
+      "title": "Home 2",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-2.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-2.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-2.hero",
+          "type": "hero-mosaic",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-2.top-stories",
+          "type": "isotope-section",
+          "label": "Destaques",
+          "region": "main"
+        },
+        {
+          "id": "home-2.ad-after-top",
+          "type": "ad-banner",
+          "label": "Banner Após Destaques",
+          "region": "main"
+        },
+        {
+          "id": "home-2.international",
+          "type": "international-section",
+          "label": "Internacional",
+          "region": "main"
+        },
+        {
+          "id": "home-2.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-2.sidebar.ad-1",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-2.editor-picks",
+          "type": "news-carousel",
+          "label": "Escolha do Editor",
+          "region": "main"
+        },
+        {
+          "id": "home-2.fashion",
+          "type": "category-news",
+          "label": "Moda",
+          "region": "main"
+        },
+        {
+          "id": "home-2.tech-world",
+          "type": "category-news",
+          "label": "Mundo Tech",
+          "region": "main"
+        },
+        {
+          "id": "home-2.food-hobbies",
+          "type": "category-news",
+          "label": "Gastronomia & Hobbies",
+          "region": "main"
+        },
+        {
+          "id": "home-2.ad-category",
+          "type": "ad-banner",
+          "label": "Banner Categorias",
+          "region": "main"
+        },
+        {
+          "id": "home-2.video",
+          "type": "video-section",
+          "label": "Área de Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-2.more-news",
+          "type": "isotope-section",
+          "label": "Mais Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-2.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Últimas Avaliações",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-2.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-2.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-3",
+      "file": "index3.html",
+      "title": "Home 3",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-3.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-3.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-3.hero",
+          "type": "hero-mosaic",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-3.whats-new",
+          "type": "isotope-section",
+          "label": "Novidades",
+          "region": "main"
+        },
+        {
+          "id": "home-3.android",
+          "type": "media-list",
+          "label": "Android",
+          "region": "main"
+        },
+        {
+          "id": "home-3.accessories",
+          "type": "media-list",
+          "label": "Acessórios",
+          "region": "main"
+        },
+        {
+          "id": "home-3.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-3.sidebar.ad-1",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-3.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-3.ad-after-top",
+          "type": "ad-banner",
+          "label": "Banner Após Destaques",
+          "region": "main"
+        },
+        {
+          "id": "home-3.video",
+          "type": "video-section",
+          "label": "Assistir Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-3.gadgets",
+          "type": "card-grid",
+          "label": "Gadgets",
+          "region": "main"
+        },
+        {
+          "id": "home-3.latest-news",
+          "type": "latest-news",
+          "label": "Últimas Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-3.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Mais Avaliados",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-3.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-3.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-4",
+      "file": "index4.html",
+      "title": "Home 4",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-4.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-4.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-4.hero",
+          "type": "hero-mosaic",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-4.popular-games",
+          "type": "isotope-section",
+          "label": "Games Populares",
+          "region": "main"
+        },
+        {
+          "id": "home-4.games-reviews",
+          "type": "review-section",
+          "label": "Reviews de Games",
+          "region": "main"
+        },
+        {
+          "id": "home-4.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-4.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Recentes / Populares",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-4.video",
+          "type": "video-section",
+          "label": "Assistir Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-4.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-5",
+      "file": "index5.html",
+      "title": "Home 5",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-5.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-5.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-5.hero",
+          "type": "hero-mosaic",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-5.popular-news",
+          "type": "isotope-section",
+          "label": "Notícias Populares",
+          "region": "main"
+        },
+        {
+          "id": "home-5.racing-world",
+          "type": "overlay-list",
+          "label": "Mundo das Corridas",
+          "region": "main"
+        },
+        {
+          "id": "home-5.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.sidebar.ad-1",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.video",
+          "type": "video-section",
+          "label": "Assistir Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-5.latest-article",
+          "type": "latest-news",
+          "label": "Último Artigo",
+          "region": "main"
+        },
+        {
+          "id": "home-5.sidebar.categories",
+          "type": "category-boxes",
+          "label": "Categorias",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.sidebar.ad-2",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar (2)",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Mais Avaliados",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-5.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-6",
+      "file": "index6.html",
+      "title": "Home 6",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-6.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-6.hero",
+          "type": "hero-banner",
+          "label": "Slider de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-6.featured",
+          "type": "featured-section",
+          "label": "Notícias em Destaque",
+          "region": "main"
+        },
+        {
+          "id": "home-6.latest-articles",
+          "type": "latest-news",
+          "label": "Últimos Artigos",
+          "region": "main"
+        },
+        {
+          "id": "home-6.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.sidebar.ad-1",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.trending",
+          "type": "trending-section",
+          "label": "Em Alta",
+          "region": "main"
+        },
+        {
+          "id": "home-6.categories",
+          "type": "category-boxes",
+          "label": "Área de Categorias",
+          "region": "main"
+        },
+        {
+          "id": "home-6.more-news",
+          "type": "more-news",
+          "label": "Mais Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-6.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Últimas Avaliações",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.sidebar.ad-2",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar (2)",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-6.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "home-7",
+      "file": "index7.html",
+      "title": "Home 7",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "home-7.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "home-7.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "home-7.hero",
+          "type": "hero-nivo",
+          "label": "Slider Nivo",
+          "region": "main"
+        },
+        {
+          "id": "home-7.hero-side",
+          "type": "media-list",
+          "label": "Laterais do Slider",
+          "region": "main"
+        },
+        {
+          "id": "home-7.popular-recipes",
+          "type": "isotope-section",
+          "label": "Receitas Populares",
+          "region": "main"
+        },
+        {
+          "id": "home-7.food-reviews",
+          "type": "review-section",
+          "label": "Reviews Gastronômicos",
+          "region": "main"
+        },
+        {
+          "id": "home-7.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-7.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Abas Recentes / Populares",
+          "region": "sidebar"
+        },
+        {
+          "id": "home-7.video",
+          "type": "video-carousel",
+          "label": "Assistir Vídeos",
+          "region": "main"
+        },
+        {
+          "id": "home-7.categories",
+          "type": "category-boxes",
+          "label": "Área de Categorias",
+          "region": "main"
+        },
+        {
+          "id": "home-7.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "post-1",
+      "file": "post-style-1.html",
+      "title": "Post Style 1",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "post-1.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "post-1.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "post-1.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "post-1.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "post-1.list",
+          "type": "media-list",
+          "label": "Lista Post Style 1",
+          "region": "main"
+        },
+        {
+          "id": "post-1.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-1.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-1.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-1.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-1.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "post-2",
+      "file": "post-style-2.html",
+      "title": "Post Style 2",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "post-2.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "post-2.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "post-2.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "post-2.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "post-2.list",
+          "type": "card-grid",
+          "label": "Grade Post Style 2",
+          "region": "main"
+        },
+        {
+          "id": "post-2.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-2.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-2.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-2.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-2.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "post-3",
+      "file": "post-style-3.html",
+      "title": "Post Style 3",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "post-3.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "post-3.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "post-3.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "post-3.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "post-3.list",
+          "type": "media-list",
+          "label": "Lista Post Style 3",
+          "region": "main"
+        },
+        {
+          "id": "post-3.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-3.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-3.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-3.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Mais Avaliados",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-3.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-3.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "post-4",
+      "file": "post-style-4.html",
+      "title": "Post Style 4",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "post-4.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "post-4.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "post-4.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "post-4.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "post-4.list",
+          "type": "overlay-list",
+          "label": "Lista Post Style 4",
+          "region": "main"
+        },
+        {
+          "id": "post-4.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-4.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-4.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-4.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Mais Avaliados",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-4.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "post-4.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "archive",
+      "file": "archive.html",
+      "title": "Archive",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "archive.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "archive.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "archive.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "archive.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "archive.filters",
+          "type": "archive-filters",
+          "label": "Filtros de Arquivo",
+          "region": "main"
+        },
+        {
+          "id": "archive.list",
+          "type": "media-list",
+          "label": "Posts do Arquivo",
+          "region": "main"
+        },
+        {
+          "id": "archive.sidebar.archives",
+          "type": "archive-filters",
+          "label": "Arquivo",
+          "region": "sidebar"
+        },
+        {
+          "id": "archive.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "archive.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "archive.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "author",
+      "file": "author-post.html",
+      "title": "Author Post",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "author.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "author.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "author.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "author.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "author.profile",
+          "type": "article-author",
+          "label": "Perfil do Autor",
+          "region": "main"
+        },
+        {
+          "id": "author.list",
+          "type": "media-list",
+          "label": "Posts do Autor",
+          "region": "main"
+        },
+        {
+          "id": "author.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "author.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "author.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "author.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "author.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "article-1",
+      "file": "single-news-1.html",
+      "title": "News Details 1",
+      "aliases": [
+        "single-news-4.html"
+      ],
+      "widgets": [
+        {
+          "id": "article-1.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "article-1.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "article-1.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "article-1.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "article-1.body",
+          "type": "article-body",
+          "label": "Corpo do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-1.tags",
+          "type": "article-tags",
+          "label": "Tags do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-1.share",
+          "type": "article-share",
+          "label": "Compartilhar",
+          "region": "main"
+        },
+        {
+          "id": "article-1.nav",
+          "type": "article-nav",
+          "label": "Artigo Anterior / Próximo",
+          "region": "main"
+        },
+        {
+          "id": "article-1.author",
+          "type": "article-author",
+          "label": "Box do Autor",
+          "region": "main"
+        },
+        {
+          "id": "article-1.comments",
+          "type": "article-comments",
+          "label": "Comentários",
+          "region": "main"
+        },
+        {
+          "id": "article-1.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.sidebar.reviews",
+          "type": "sidebar-reviews",
+          "label": "Mais Avaliados",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-1.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "article-2",
+      "file": "single-news-2.html",
+      "title": "News Details 2",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "article-2.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "article-2.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "article-2.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "article-2.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "article-2.hero",
+          "type": "hero-banner",
+          "label": "Hero do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-2.body",
+          "type": "article-body",
+          "label": "Corpo do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-2.tags",
+          "type": "article-tags",
+          "label": "Tags do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-2.share",
+          "type": "article-share",
+          "label": "Compartilhar",
+          "region": "main"
+        },
+        {
+          "id": "article-2.nav",
+          "type": "article-nav",
+          "label": "Artigo Anterior / Próximo",
+          "region": "main"
+        },
+        {
+          "id": "article-2.author",
+          "type": "article-author",
+          "label": "Box do Autor",
+          "region": "main"
+        },
+        {
+          "id": "article-2.related",
+          "type": "related-carousel",
+          "label": "Posts Relacionados",
+          "region": "main"
+        },
+        {
+          "id": "article-2.comments",
+          "type": "article-comments",
+          "label": "Comentários",
+          "region": "main"
+        },
+        {
+          "id": "article-2.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-2.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-2.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Abas Recentes / Populares",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-2.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-2.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-2.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "article-3",
+      "file": "single-news-3.html",
+      "title": "News Details 3",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "article-3.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "article-3.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "article-3.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "article-3.hero",
+          "type": "hero-banner",
+          "label": "Banner Interno",
+          "region": "main"
+        },
+        {
+          "id": "article-3.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "article-3.body",
+          "type": "article-body",
+          "label": "Corpo do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-3.tags",
+          "type": "article-tags",
+          "label": "Tags do Artigo",
+          "region": "main"
+        },
+        {
+          "id": "article-3.share",
+          "type": "article-share",
+          "label": "Compartilhar",
+          "region": "main"
+        },
+        {
+          "id": "article-3.nav",
+          "type": "article-nav",
+          "label": "Artigo Anterior / Próximo",
+          "region": "main"
+        },
+        {
+          "id": "article-3.author",
+          "type": "article-author",
+          "label": "Box do Autor",
+          "region": "main"
+        },
+        {
+          "id": "article-3.comments",
+          "type": "article-comments",
+          "label": "Comentários",
+          "region": "main"
+        },
+        {
+          "id": "article-3.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-3.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-3.sidebar.recent",
+          "type": "sidebar-recent",
+          "label": "Notícias Recentes",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-3.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-3.sidebar.tags",
+          "type": "sidebar-tags",
+          "label": "Tags",
+          "region": "sidebar"
+        },
+        {
+          "id": "article-3.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "gallery-1",
+      "file": "gallery-style-1.html",
+      "title": "Gallery Style 1",
+      "aliases": [
+        "gallery-style1.html"
+      ],
+      "widgets": [
+        {
+          "id": "gallery-1.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "gallery-1.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "gallery-1.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "gallery-1.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "gallery-1.grid",
+          "type": "gallery-grid",
+          "label": "Galeria Layout 1",
+          "region": "main"
+        },
+        {
+          "id": "gallery-1.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "gallery-2",
+      "file": "gallery-style-2.html",
+      "title": "Gallery Style 2",
+      "aliases": [
+        "gallery-style2.html"
+      ],
+      "widgets": [
+        {
+          "id": "gallery-2.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "gallery-2.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "gallery-2.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "gallery-2.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "gallery-2.grid",
+          "type": "gallery-grid",
+          "label": "Galeria Layout 2",
+          "region": "main"
+        },
+        {
+          "id": "gallery-2.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "contact.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "contact.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "contact.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "contact.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "contact.about",
+          "type": "featured-section",
+          "label": "Sobre Nós",
+          "region": "main"
+        },
+        {
+          "id": "contact.location",
+          "type": "meta-bar",
+          "label": "Localização",
+          "region": "main"
+        },
+        {
+          "id": "contact.form",
+          "type": "contact-form",
+          "label": "Envie uma Mensagem",
+          "region": "main"
+        },
+        {
+          "id": "contact.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "contact.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "contact.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "contact.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "privacy",
+      "file": "privacy.html",
+      "title": "Política de Privacidade",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "privacy.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "privacy.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "privacy.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "privacy.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "privacy.body",
+          "type": "article-body",
+          "label": "Política de Privacidade",
+          "region": "main"
+        },
+        {
+          "id": "privacy.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "privacy.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "privacy.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "privacy.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "a11y",
+      "file": "acessibilidade.html",
+      "title": "Acessibilidade",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "a11y.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "a11y.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "a11y.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "a11y.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "a11y.body",
+          "type": "article-body",
+          "label": "Declaração de Acessibilidade",
+          "region": "main"
+        },
+        {
+          "id": "a11y.sidebar.social",
+          "type": "sidebar-social",
+          "label": "Redes Sociais",
+          "region": "sidebar"
+        },
+        {
+          "id": "a11y.sidebar.ad",
+          "type": "ad-banner",
+          "label": "Anúncio Sidebar",
+          "region": "sidebar"
+        },
+        {
+          "id": "a11y.sidebar.newsletter",
+          "type": "sidebar-newsletter",
+          "label": "Newsletter",
+          "region": "sidebar"
+        },
+        {
+          "id": "a11y.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    },
+    {
+      "pageId": "error-404",
+      "file": "404.html",
+      "title": "404 Error",
+      "aliases": [],
+      "widgets": [
+        {
+          "id": "error-404.header",
+          "type": "site-header",
+          "label": "Cabeçalho",
+          "region": "main"
+        },
+        {
+          "id": "error-404.ticker",
+          "type": "ticker",
+          "label": "Ticker de Notícias",
+          "region": "main"
+        },
+        {
+          "id": "error-404.meta-bar",
+          "type": "meta-bar",
+          "label": "Barra de Infos",
+          "region": "main"
+        },
+        {
+          "id": "error-404.breadcrumbs",
+          "type": "breadcrumbs",
+          "label": "Breadcrumb",
+          "region": "main"
+        },
+        {
+          "id": "error-404.message",
+          "type": "error-message",
+          "label": "Mensagem 404",
+          "region": "main"
+        },
+        {
+          "id": "error-404.footer",
+          "type": "site-footer",
+          "label": "Rodapé",
+          "region": "main"
+        }
+      ]
+    }
+  ]
+}
