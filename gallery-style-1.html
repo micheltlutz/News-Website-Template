@@ -160,9 +160,10 @@
                                     <div class="header-action-item">
                                         <ul>
                                             <li>
-                                                <form id="top-search-form" class="header-search-light">
-                                                    <input type="text" class="search-input" placeholder="Search...." required="" style="display: none;">
-                                                    <button class="search-button">
+                                                <form id="top-search-form" class="header-search-light" role="search">
+                                                    <label class="visuallyhidden" for="top-search-input">Buscar no site</label>
+                                                    <input type="search" id="top-search-input" class="search-input" name="s" placeholder="Buscar...." required="" style="display: none;" aria-label="Buscar no site">
+                                                    <button type="button" class="search-button" aria-label="Abrir busca" aria-expanded="false" aria-controls="top-search-input">
                                                         <i class="fa fa-search" aria-hidden="true"></i>
                                                     </button>
                                                 </form>
@@ -174,15 +175,15 @@
                                             </li>
                                             <li>
                                                 <div id="side-menu-trigger" class="offcanvas-menu-btn">
-                                                    <a href="#" class="menu-bar">
+                                                    <button type="button" class="menu-bar" aria-label="Abrir menu lateral" aria-expanded="false" aria-controls="offcanvas-body-wrapper">
                                                         <span></span>
                                                         <span></span>
                                                         <span></span>
-                                                    </a>
-                                                    <a href="#" class="menu-times close">
+                                                    </button>
+                                                    <button type="button" class="menu-times close" aria-label="Fechar menu lateral" hidden>
                                                         <span></span>
                                                         <span></span>
-                                                    </a>
+                                                    </button>
                                                 </div>
                                             </li>
                                         </ul>
@@ -961,26 +962,26 @@
             </footer>
             <!-- Footer Area End Here -->
             <!-- Modal Start-->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="myModal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <div class="title-login-form">Login</div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">&times;</button>
+                            <div class="title-login-form" id="login-modal-title">Login</div>
                         </div>
                         <div class="modal-body">
                             <div class="login-form">
                                 <form>
-                                    <label>Username or email address *</label>
-                                    <input type="text" placeholder="Name or E-mail" />
-                                    <label>Password *</label>
-                                    <input type="password" placeholder="Password" />
+                                    <label for="login-username">Username or email address *</label>
+                                    <input id="login-username" type="text" name="username" placeholder="Name or E-mail" autocomplete="username" required />
+                                    <label for="login-password">Password *</label>
+                                    <input id="login-password" type="password" name="password" placeholder="Password" autocomplete="current-password" required />
                                     <div class="checkbox checkbox-primary">
                                         <input id="checkbox" type="checkbox" checked>
                                         <label for="checkbox">Remember Me</label>
                                     </div>
                                     <button type="submit" value="Login">Login</button>
-                                    <button class="form-cancel" type="submit" value="">Cancel</button>
+                                    <button class="form-cancel" type="button" data-dismiss="modal" value="">Cancel</button>
                                     <label class="lost-password">
                                         <a href="#">Lost your password?</a>
                                     </label>
@@ -994,10 +995,10 @@
             <!-- Offcanvas Menu Start -->
             <div id="offcanvas-body-wrapper" class="offcanvas-body-wrapper">
                 <div id="offcanvas-nav-close" class="offcanvas-nav-close offcanvas-menu-btn">
-                    <a href="#" class="menu-times re-point">
+                    <button type="button" class="menu-times re-point" aria-label="Fechar menu lateral">
                         <span></span>
                         <span></span>
-                    </a>
+                    </button>
                 </div>
                 <div class="offcanvas-main-body">
                     <ul id="accordion" class="offcanvas-nav panel-group">
